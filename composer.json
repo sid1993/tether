@@ -1,0 +1,11 @@
+{
+    "name": "sid/tether",
+    "description": "hackathon",
+    "authors": [
+        {
+            "name": "Sid",
+            "email": "d.legend.1993@gmail.com"
+        }
+    ],
+    "require": {}
+}
