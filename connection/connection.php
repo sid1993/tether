@@ -1,4 +1,11 @@
 <?php
-	$connection=mysql_connect('localhost','root','1234');
-	$db=mysql_select_db('project');
+	$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+	$server = $url["host"];
+	$username = $url["user"];
+	$password = $url["pass"];
+	$db = substr($url["path"], 1);
+
+
+	$connection=mysql_connect($server,$username,$password);
+	$db=mysql_select_db($db);
 ?> 
