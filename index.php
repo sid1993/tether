@@ -22,39 +22,6 @@ body {
 -->
 </style>
 </head>
-<?php
-	include "connection/connection.php";
-	if(isset($_POST['login']))
-	{
-		$emailid=$_POST['email'];
-		$pass=$_POST['pass'];
-		$sql="select * from registration where emailid='$email_id';";
-		$res=mysql_query($sql);
-		$fres=mysql_fetch_assoc($res);
-		$db_pass=$fres['password'];
-		if($pass==$db_pass)
-		{
-			/*session_start();
-			$_SESSION['name']=$fres['fname']." ".$fres['lname'];
-			$_SESSION['uid']=$fres['uid'];
-			$_SESSION['uiid']=$fres['uiid'];
-			$_SESSION['uiphoto']=$fres['uiphoto'];
-			$_SESSION['uphoto']=$fres['uphoto'];
-			*/
-			echo "<script>
-					alert('Login Succesful !!');
-					location.replace('dashboard.php');
-				</script>";
-		}
-		else
-		{
-			echo "<script>
-					alert('Login UnSuccesful !!');
-					location.replace('login.php?');
-				</script>";
-		}
-	}
-?>
 
 <body>
 <form id="form1" name="form1" method="post" action="">
