@@ -10,6 +10,11 @@
 	echo $db;
 
 
-	echo mysql_connect('us-cdbr-iron-east-03.cleardb.net:3306','b3934deb5eca6f','75eb4c64');
+	$connection=mysql_connect('us-cdbr-iron-east-03.cleardb.net:3306','b3934deb5eca6f','75eb4c64');
+	if (!$connection) {
+    	die('Could not connect: ' . mysql_error());
+		}
+		echo 'Connected successfully';
+		mysql_close($connection);
 	$db=mysql_select_db($db);
 ?> 
