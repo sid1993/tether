@@ -1,20 +1,10 @@
 <?php
-	$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-	$server = $url["host"];
-	$username = $url["user"];
-	$password = $url["pass"];
-	$db = substr($url["path"], 1);
-	echo $server;
-	echo $username;
-	echo $password;
-	echo $db;
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
+$server = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$db = substr($url["path"], 1);
 
-	$connection=mysql_connect('us-cdbr-iron-east-03.cleardb.net:3306','b3934deb5eca6f','75eb4c64');
-	if (!$connection) {
-    	die('Could not connect: ' . mysql_error());
-		}
-		echo 'Connected successfully';
-		mysql_close($connection);
-	$db=mysql_select_db($db);
-?> 
+$conn = new mysqli($server, $username, $password, $db);
+?>
