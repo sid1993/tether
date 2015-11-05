@@ -29,10 +29,9 @@ body {
 		echo "Hello";
 		$emailid=$_POST['email'];
 		$pass=$_POST['pass'];
-		$sql="select * from registration where emailid='$email_id';";
-		$res=mysql_query($sql);
-		$fres=mysql_fetch_assoc($res);
-		echo "SID";
+		$res = $conn->query("SELECT * FROM heroku_78c30c5595ce4d9.registration;");
+		$fres =$res->fetch_all();
+		print_r($fres);
 		$db_pass=$fres['password'];
 		if($pass==$db_pass)
 		{
