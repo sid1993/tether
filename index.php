@@ -29,10 +29,10 @@ body {
 		echo "Hello";
 		$emailid=$_POST['email'];
 		$pass=$_POST['pass'];
-		$res = $conn->query("SELECT * FROM heroku_78c30c5595ce4d9.registration;");
+		$res = $conn->query("SELECT password FROM heroku_78c30c5595ce4d9.registration where emailid='$emailid';");
 		$fres = mysqli_fetch_array($res, MYSQLI_ASSOC);
 		echo '<pre>',print_r($fres,1),'</pre>';
-		$db_pass=$fres[0][12];
+		$db_pass=$fres[0]['password'];
 		if($pass==$db_pass)
 		{
 			session_start();
