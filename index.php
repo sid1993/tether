@@ -32,7 +32,7 @@ body {
 		$res = $conn->query("SELECT * FROM heroku_78c30c5595ce4d9.registration;");
 		$fres =$res->fetch_all();
 		echo '<pre>',print_r($fres,1),'</pre>';
-		$db_pass=$fres[12];
+		$db_pass=$fres[0][12];
 		if($pass==$db_pass)
 		{
 			session_start();
