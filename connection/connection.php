@@ -10,6 +10,6 @@
 	echo $db;
 
 
-	$connection=mysql_connect($server,$username,$password);
+	$connection=mysql_connect('$server:3306','$username','$password');
 	$db=mysql_select_db($db);
 ?> 
