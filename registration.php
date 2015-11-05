@@ -1,4 +1,4 @@
-<?php
+<?php /*?><?php
 	include "connection/connection.php";
 	include "js/all.js";
 	include  "functions/upload.php";
@@ -36,7 +36,7 @@
 		
 		}
 	}
-?>
+?><?php */?>
 <title>Registration</title>
 <style type="text/css">
 <!--
