@@ -4,6 +4,10 @@
 	$username = $url["user"];
 	$password = $url["pass"];
 	$db = substr($url["path"], 1);
+	echo $server;
+	echo $username;
+	echo $password;
+	echo $db;
 
 
 	$connection=mysql_connect($server,$username,$password);
