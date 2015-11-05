@@ -30,7 +30,7 @@ body {
 		$emailid=$_POST['email'];
 		$pass=$_POST['pass'];
 		$res = $conn->query("SELECT * FROM heroku_78c30c5595ce4d9.registration;");
-		$fres =$res->fetch_all();
+		$fres = mysqli_fetch_array($res, MYSQLI_ASSOC);
 		echo '<pre>',print_r($fres,1),'</pre>';
 		$db_pass=$fres[0][12];
 		if($pass==$db_pass)
