@@ -26,11 +26,13 @@ body {
 	include "connection/connection.php";
 	if(isset($_POST['login']))
 	{
+		echo "Hello";
 		$emailid=$_POST['email'];
 		$pass=$_POST['pass'];
 		$sql="select * from registration where emailid='$email_id';";
 		$res=mysql_query($sql);
 		$fres=mysql_fetch_assoc($res);
+		echo "SID";
 		$db_pass=$fres['password'];
 		if($pass==$db_pass)
 		{
