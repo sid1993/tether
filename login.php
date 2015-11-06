@@ -26,20 +26,18 @@ body {
 	include "connection/connection.php";
 	if(isset($_POST['login']))
 	{
-		echo "Hello";
-		$emailid=$_POST['email'];
+		$aadhar_number=$_POST['aadhar_number'];
 		$pass=$_POST['pass'];
-		$res = $conn->query("SELECT password FROM heroku_78c30c5595ce4d9.registration where emailid='$emailid';");
-		$fres = mysqli_fetch_array($res, MYSQLI_ASSOC);
-		echo '<pre>',print_r($fres,1),'</pre>';
-		$db_pass=$fres[0]['password'];
+		$sql="select * from registration where aadhar_number='$aadhar_number';";
+		$res=mysql_query($sql);
+		$fres=mysql_fetch_assoc($res);
+		$db_pass=$fres['password'];
 		if($pass==$db_pass)
 		{
 			session_start();
 			$_SESSION['name']=$fres['fname']." ".$fres['lname'];
-			$_SESSION['uid']=$fres['uid'];
-			$_SESSION['uiid']=$fres['uiid'];
-			$_SESSION['uiphoto']=$fres['uiphoto'];
+			$_SESSION['aadhar_number']=$fres['aadhar_number'];
+			$_SESSION['address']=$fres['address'];
 			$_SESSION['uphoto']=$fres['uphoto'];
 			
 			echo "<script>
@@ -60,16 +58,16 @@ body {
 <body>
 <form id="form1" name="form1" method="post" action="">
   <h1 align="center" class="style1">	
-  <div align="center">
-    <h1 class="style4">Login Portal    </h1>
-  </div>
+  <div align="center"><span class="style3">
+    <input type="image" name="imageField" id="imageField" src="images/final logo.png" />
+  </span></div>
   <p align="center" class="style1">&nbsp;</p>
   <p align="center" class="style1"><img src="images/guest.png" width="128" height="128" /></p>
-  <table width="26%" height="110"  align="center" cellpadding="1" cellspacing="1">
+  <table width="30%" height="110"  align="center" cellpadding="1" cellspacing="1"style="background-color: #E5F2FF;filter:alpha(opacity=60); -moz-opacity:0.1; opacity: 0.8;border:3px dashed #FF9933">
     <tr>
-      <td width="22%" height="37"  align="right"><span class="style2">Email ID </span></td>
+      <td width="22%" height="37"  align="right"><span class="style2">Aadhar Number</span></td>
       <td width="12%" align="center">:</td>
-      <td width="66%" align="left"><input name="email" type="text" id="email" /></td>
+      <td width="66%" align="left"><input name="aadhar_number" type="text" id="aadhar_number" /></td>
     </tr>
     <tr>
       <td height="39"  align="right"><span class="style2">Password</span></td>
@@ -80,7 +78,8 @@ body {
       <td height="26" colspan="3"  align="center"><input name="login" type="submit" id="login" value="login" /></td>
     </tr>
   </table>
-  <p align="center" class="style3"><a href="registration.php">Register</a> , if you have no account. </p>
+  <p align="center" class="style3"><a href="registration.php">Contact us</a> , if you have no account.</p>
+  <p align="center" class="style3">&nbsp;</p>
 </form>
 </body>
 </html>

@@ -1,16 +1,34 @@
 <script>
 function chck_null_registration()
 {
-	if(document.getElementById('fname').value=="")
+	if(document.getElementById("fname").value=="")
 	{
 		alert("First name cannot be blank!!");
 		document.getElementById('fname').focus();
-					return false;
+		return false;
 	}
 	else if(document.getElementById('lname').value=="")
 	{
 		alert("Last name cannot be blank!!");
 		document.getElementById('lname').focus();
+					return false;
+	}
+	else if(document.getElementById('age').value=="")
+	{
+		alert("Age cannot be blank!!");
+		document.getElementById('age').focus();
+					return false;
+	}
+	else if(document.getElementById('sex').value=="")
+	{
+		alert("Sex cannot be blank!!");
+		document.getElementById('sex').focus();
+					return false;
+	}
+	else if(document.getElementById('blood_group').value=="")
+	{
+		alert("Blood Group cannot be blank!!");
+		document.getElementById('blood_group').focus();
 					return false;
 	}
 	else if(document.getElementById('email').value=="")
@@ -23,6 +41,36 @@ function chck_null_registration()
 	{
 		alert("Contact Number cannot be blank!!");
 		document.getElementById('cno').focus();
+					return false;
+	}
+	else if(document.getElementById('user_aadhar').value=="")
+	{
+		alert("User's Aadhar Number cannot be blank!!");
+		document.getElementById('user_aadhar').focus();
+					return false;
+	}
+	else if(document.getElementById('father_name').value=="")
+	{
+		alert("Father's Name cannot be blank!!");
+		document.getElementById('father_name').focus();
+					return false;
+	}
+	else if(document.getElementById('father_aadhar').value=="")
+	{
+		alert("Father's Aadhar Number cannot be blank!!");
+		document.getElementById('father_aadhar').focus();
+					return false;
+	}
+	else if(document.getElementById('mother_name').value=="")
+	{
+		alert("Mother's Name cannot be blank!!");
+		document.getElementById('mother_name').focus();
+					return false;
+	}
+	else if(document.getElementById('mother_aadhar').value=="")
+	{
+		alert("Mother's Aadhar Number cannot be blank!!");
+		document.getElementById('mother_aadhar').focus();
 					return false;
 	}
 	else if(document.getElementById('address').value=="")
@@ -49,49 +97,12 @@ function chck_null_registration()
 		document.getElementById('prof').focus();
 					return false;
 	}
-	else if(document.getElementById('uiid').value=="")
-	{
-		alert("User Identity Number cannot be blank!!");
-		document.getElementById('uiid').focus();
-					return false;
-	}
-	else if(document.getElementById('uiphoto').value=="")
-	{
-		alert("User Indentify Photo cannot be blank!!");
-		document.getElementById('uiphoto').focus();
-					return false;
-	}
 	else if(document.getElementById('uphoto').value=="")
 	{
 		alert("First name cannot be blank!!");
 		document.getElementById('uphoto').focus();
 					return false;
 	}
-	else if(document.getElementById('uname').value=="")
-	{
-		alert("Username cannot be blank!!");
-		document.getElementById('uname').focus();
-					return false;
-	}
-	else if(document.getElementById('pass').value=="")
-	{
-		alert("Password name cannot be blank!!");
-		document.getElementById('pass').focus();
-					return false;
-	}
-	else if(document.getElementById('repass').value=="")
-	{
-		alert("Re-type Password cannot be blank!!");
-		document.getElementById('repass').focus();
-					return false;
-	}
-	if(document.getElementById('pass').value!= document.getElementById('repass').value)
-	{
-		alert("Password mismatch!!");
-		document.getElementById('repass').focus();
-					return false;
-	}
-
-	
+	return true;
 }
 </script>
