@@ -22,7 +22,7 @@ body {
 -->
 </style>
 </head>
-<?php
+<?php /*?><?php
 	include "connection/connection.php";
 	if(isset($_POST['login']))
 	{
@@ -53,7 +53,7 @@ body {
 				</script>";
 		}
 	}
-?>
+?><?php */?>
 
 <body>
 <form id="form1" name="form1" method="post" action="">
