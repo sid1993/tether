@@ -7,8 +7,8 @@ define('CHATLINK', 1);             // allows links in texts (1), not allow (0)
 // Here create the rooms for chat
 // For more rooms, add lines with this syntax  $chatrooms[] = 'room_name';
 $chatrooms = array();
-$chatrooms[] = 'English';
-$chatrooms[] = 'Nature';
+$chatrooms[] = 'Our Web Consultant';
+
 
 
 // password used to empty chat rooms after this page is accessed with ?mod=admin
