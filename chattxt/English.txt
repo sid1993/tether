@@ -1,1 +1,1 @@
-{"time":1410471748,"users":[],"chats":[{"user":"ganesh","date":"11 September 21:42","chat":"Hello...How are you feeling ? Can i get your Aadhar number please?"},{"user":"ganesh","date":"11 September 21:42","chat":":)"}]}
+{"time":1410471748,"users":[],"chats":[{"user":"ganesh","date":"11 September 21:42","chat":"Hello...How are you feeling ? What are your symptoms?"},{"user":"ganesh","date":"11 September 21:42","chat":":)"}]}
