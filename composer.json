@@ -1,0 +1,11 @@
+{
+    "name": "sid/tether",
+    "description": "Final Year Project",
+    "authors": [
+        {
+            "name": "sid",
+            "email": "d.legend.1993@gmail.com"
+        }
+    ],
+    "require": {"heroku/heroku-buildpack-php": "*"}
+}
