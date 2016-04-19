@@ -7,5 +7,5 @@
             "email": "d.legend.1993@gmail.com"
         }
     ],
-    "require": {"heroku/heroku-buildpack-php": "*"}
+    "require-dev": {"heroku/heroku-buildpack-php": "*"}
 }

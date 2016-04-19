@@ -4,9 +4,10 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7cfe0329ed205c30464bff7996c6a78b",
-    "content-hash": "4f4140637e8fbce8091c4c2b0ffe7eb9",
-    "packages": [
+    "hash": "aa0bce53d36dae5d9a49645dc8af5bba",
+    "content-hash": "9d806e1db1600306d8b09f5022501219",
+    "packages": [],
+    "packages-dev": [
         {
             "name": "heroku/heroku-buildpack-php",
             "version": "v101",
@@ -52,7 +53,6 @@
             "time": "2016-04-12 02:41:29"
         }
     ],
-    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
