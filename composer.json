@@ -1,11 +1,14 @@
 {
     "name": "sid/tether",
-    "description": "hackathon",
+    "description": "Final Year Project",
     "authors": [
         {
-            "name": "Sid",
+            "name": "sid",
             "email": "d.legend.1993@gmail.com"
         }
     ],
     "require": {}
 }
+ "require-dev": {
+    "heroku/heroku-buildpack-php": "*"
+  }
