@@ -29,7 +29,7 @@ body {
 		$emailid=$_POST['email'];
 		$pass=$_POST['pass'];
 		$sql="SELECT * FROM heroku_78c30c5595ce4d9.registration where emailid='$emailid';";
-		$res=mysqli_query($sql);
+		$res=mysqli_query($conn,$sql);
 		$fres=mysqli_fetch_assoc($res);
 		print_r($fres);
 		$db_pass=$fres['password'];
