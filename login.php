@@ -32,6 +32,7 @@ body {
 		$res=mysqli_query($sql);
 		$fres=mysqli_fetch_assoc($res);
 		$db_pass=$fres['password'];
+		echo $fres['password'];
 		if($pass==$db_pass)
 		{
 			/*session_start();
