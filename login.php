@@ -29,8 +29,8 @@ body {
 		$emailid=$_POST['email'];
 		$pass=$_POST['pass'];
 		$sql="select * from registration where emailid='$email_id';";
-		$res=mysql_query($sql);
-		$fres=mysql_fetch_assoc($res);
+		$res=mysqli_query($sql);
+		$fres=mysqli_fetch_assoc($res);
 		$db_pass=$fres['password'];
 		if($pass==$db_pass)
 		{
