@@ -23,7 +23,7 @@ body {
 </style>
 </head>
 <?php
-	#include "connection/connection.php";
+	include "connection/connection.php";
 	if(isset($_POST['login']))
 	{
 		$emailid=$_POST['email'];
