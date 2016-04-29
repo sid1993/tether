@@ -16,6 +16,7 @@
 		$uiid=$_POST['uiid'];
 		$uname=$_POST['uname'];
 		$pass=$_POST['pass'];
+		$doctor_reg_code=$_POST['doctor_reg_code'];
 		
 		$uif=$_FILES['uiphoto'];
 		$uf=$_FILES['uphoto'];
@@ -27,7 +28,7 @@
 		
 		if($up1 == true && $up2==true)
 		{
-		$sql="insert into registration(emailid,uid,fname,lname,cno,address,state,pincode,profession,uiid,uiphoto,username,password,uphoto) values('$email','$uid','$fname','$lname','$cno','$address','$state','$pincode','$prof','$uiid','$uiphoto','$uname','$pass','$uphoto');";
+		$sql="insert into registration(emailid,uid,fname,lname,cno,address,state,pincode,profession,uiid,uiphoto,doctor_reg_code,username,password,uphoto,status_code) values('$email','$uid','$fname','$lname','$cno','$address','$state','$pincode','$prof','$uiid','$uiphoto','$doctor_reg_code','$uname','$pass','$uphoto',0);";
 		$rec=mysql_query($sql);
 		
 		echo "<script> alert('Success');
@@ -131,6 +132,11 @@ body,td,th {
         <td height="48" align="right"><span class="style1">User Photo</span> </td>
         <td align="center">:</td>
         <td align="left"><input name="uphoto" type="file" id="uphoto" style="background-color:#9999FF"/></td>
+      </tr>
+      <tr>
+        <td height="47" align="right"><span class="style1">Doctor's Registration Number</span></td>
+        <td align="center">:</td>
+        <td align="left"><input name="doctor_reg_code" id="doctor_reg_code" style="background-color:#9999FF"/></td>
       </tr>
       <tr>
         <td height="34" align="right"><span class="style1">Username</span> </td>
