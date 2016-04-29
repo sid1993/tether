@@ -165,7 +165,7 @@
   var embed;
   function onGruveoEmbedAPIReady() {
     <?php
-      $secret = 'YOUR_API_KEY';
+      $secret = 'HJRNNrHpTE5ENEhXUR6PKVPS';
       $generated = time();
       $signature = base64_encode(hash_hmac('sha256', (string)$generated, $secret, TRUE));
     ?>
