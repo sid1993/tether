@@ -203,11 +203,13 @@
           </form>
 
         </div>
+        </div>
+
         
         <div id="login">   
           <h1>Welcome Back!</h1>
           
-          <form form id="form1" name="form1" method="post" action="">
+          <form form id="form2" name="form2" method="post" action="">
           
             <div class="field-wrap">
             <label>
