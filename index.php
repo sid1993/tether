@@ -154,7 +154,8 @@
         <!--
         End Home SliderEnd
         ==================================== -->
-		<div id="myembed"></div>
+<section id="gruveo" class="gruveo">		
+        <div id="myembed"></div>
 
 <script>
   var tag = document.createElement("script");
@@ -178,6 +179,7 @@
     });
   }
 </script>
+</section>
         <!--
         Features
         ==================================== -->
