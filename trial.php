@@ -95,13 +95,13 @@
         <li class="tab"><a href="#login">Log In</a></li>
       </ul>
       
-      <div class="tab-content">
-        <div id="signup">   
+
+        <div id="signup" class="tab-content">   
           <h1>Sign Up !</h1>
           
           <form action="" method="post" enctype="multipart/form-data" name="form1" id="form1" onSubmit="return chck_null_registration()">
           
-          <div class="top-row">
+          
             <div class="field-wrap">
               <label>
                 First Name<span class="req">*</span>
@@ -203,10 +203,10 @@
           </form>
 
         </div>
-        </div>
+ 
         
         
-        <div id="login">   
+        <div id="login" class="tab-content">   
           <h1>Welcome Back!</h1>
           
           <form form id="form1" name="form1" method="post" action="">
@@ -232,10 +232,8 @@
           </form>
 
         </div>
-        </div>
-      </div><!-- tab-content -->
-      
-</div> <!-- /form -->
+        </div><!-- tab-content -->
+      </div> <!-- /form -->
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
         <script src="js/index.js"></script>
