@@ -99,7 +99,7 @@
         <div id="signup">   
           <h1>Sign Up !</h1>
           
-          <form action="" method="post" enctype="multipart/form-data" name="form1" id="form1" onSubmit="return chck_null_registration()">
+          <form action="" method="post" enctype="multipart/form-data" onSubmit="return chck_null_registration()">
           
           <div class="top-row">
             <div class="field-wrap">
@@ -208,7 +208,7 @@
         <div id="login">   
           <h1>Welcome Back!</h1>
           
-          <form form id="form2" name="form2" method="post" action="">
+          <form method="post" action="">
           
             <div class="field-wrap">
             <label>
