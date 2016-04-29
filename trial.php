@@ -95,7 +95,7 @@
         <li class="tab active"><a href="#login">Log In</a></li>
       </ul>
       
-      
+      <div class="tab-content">
         <div id="signup">   
           <h1>Sign Up !</h1>
           
