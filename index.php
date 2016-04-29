@@ -165,20 +165,19 @@
   var embed;
   function onGruveoEmbedAPIReady() {
     <?php
-      $secret = 'HJRNNrHpTE5ENEhXUR6PKVPS';
+      $secret = 'YOUR_API_KEY';
       $generated = time();
       $signature = base64_encode(hash_hmac('sha256', (string)$generated, $secret, TRUE));
     ?>
     embed = new Gruveo.Embed("myembed", {
-      width: 680,
-      height: 465,
       embedParams: {
         generated: <?php print $generated; ?>,
         signature: "<?php print $signature; ?>",
-        color: "63b2de"
+        color: "f97361"
       }
     });
   }
+</script>
         <!--
         Features
         ==================================== -->
