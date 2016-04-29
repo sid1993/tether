@@ -154,7 +154,31 @@
         <!--
         End Home SliderEnd
         ==================================== -->
-		
+		<div id="myembed"></div>
+
+<script>
+  var tag = document.createElement("script");
+  tag.src = "https://www.gruveo.com/embed-api/";
+  var firstScriptTag = document.getElementsByTagName("script")[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  var embed;
+  function onGruveoEmbedAPIReady() {
+    <?php
+      $secret = 'HJRNNrHpTE5ENEhXUR6PKVPS';
+      $generated = time();
+      $signature = base64_encode(hash_hmac('sha256', (string)$generated, $secret, TRUE));
+    ?>
+    embed = new Gruveo.Embed("myembed", {
+      width: 680,
+      height: 465,
+      embedParams: {
+        generated: <?php print $generated; ?>,
+        signature: "<?php print $signature; ?>",
+        color: "63b2de"
+      }
+    });
+
         <!--
         Features
         ==================================== -->
