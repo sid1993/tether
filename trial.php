@@ -200,9 +200,6 @@
           <input name="register" type="submit" id="register" value="Register" class="button button-block"/>
           
           </form>
-
-       </div>
-		</div>
         
         <div id="login">   
           <h1>Welcome Back!</h1>
