@@ -95,7 +95,7 @@
         <li class="tab"><a href="#login">Log In</a></li>
       </ul>
       
-      <div class="tab-content">
+      
         <div id="signup">   
           <h1>Sign Up !</h1>
           
@@ -240,8 +240,7 @@
         </div>
         
        </div>
-      <!-- tab-content --><!-- /form -->
-      </div>
+
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
         <script src="js/index.js"></script>
