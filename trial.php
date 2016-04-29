@@ -86,21 +86,22 @@
     
   </head>
 
-  <body>
+<body>
 
     <div class="form">
       
       <ul class="tab-group">
-        <li class="tab"><a href="#signup">Sign Up</a></li>
-        <li class="tab active"><a href="#login">Log In</a></li>
+        <li class="tab active"><a href="#signup">Sign Up</a></li>
+        <li class="tab"><a href="#login">Log In</a></li>
       </ul>
       
       <div class="tab-content">
         <div id="signup">   
           <h1>Sign Up !</h1>
           
-          <form action="" method="post" enctype="multipart/form-data" onSubmit="return chck_null_registration()">
+          <form action="" method="post" enctype="multipart/form-data" name="form1" id="form1" onSubmit="return chck_null_registration()">
           
+          <div class="top-row">
             <div class="field-wrap">
               <label>
                 First Name<span class="req">*</span>
@@ -142,63 +143,54 @@
             </label>
             <input name="state" type="text" id="state" required autocomplete="off"/>
           </div>
-          
           <div class="field-wrap">
             <label>
               Pincode<span class="req">*</span>
             </label>
             <input name="pincode" type="text" id="pincode" required autocomplete="off"/>
           </div>
-          
           <div class="field-wrap">
           <label>
               Profession<span class="req">*</span>
             </label>
             <input name="prof" type="text" id="prof" required autocomplete="off"/>
           </div>
-          
           <div class="field-wrap">
           <label>
               Identity Number<span class="req">*</span>
             </label>
             <input name="uiid" type="text" id="uiid" required autocomplete="off"/>
           </div>
-          
-          <div class="field-wrap">
+           <div class="field-wrap">
           <label>
               Identity Photo<span class="req">*</span>
             </label>
             <input name="uiphoto" type="file" id="uiphoto" required autocomplete="off"/>
           </div>
-          
            <div class="field-wrap">
           <label>
               User Photo<span class="req">*</span>
             </label>
             <input name="uphoto" type="file" id="uphoto" required autocomplete="off"/>
           </div>
-          
           <div class="field-wrap">
           <label>
               Doctor's Registration Number<span class="req">*</span>
             </label>
             <input name="doctor_reg_code" id="doctor_reg_code" required autocomplete="off"/>
           </div>
-          
           <div class="field-wrap">
           <label>
              Username<span class="req">*</span>
             </label>
             <input name="uname" type="text" id="uname" required autocomplete="off"/>
           </div>
-          
           <div class="field-wrap">
           <label>
               Password<span class="req">*</span>
             </label>
             <input name="pass" type="password" id="pass" required autocomplete="off"/>
           </div>
-          
           <div class="field-wrap">
           <label>
               Confirm-Passowrd<span class="req">*</span>
@@ -210,12 +202,13 @@
           
           </form>
 
-       </div>
-       
-       <div id="login">   
+        </div>
+        </div>
+        
+        <div id="login">   
           <h1>Welcome Back!</h1>
           
-          <form method="post" action="">
+          <form form id="form1" name="form1" method="post" action="">
           
             <div class="field-wrap">
             <label>
@@ -239,8 +232,9 @@
 
         </div>
         
-       </div>
-
+      </div><!-- tab-content -->
+      
+</div> <!-- /form -->
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
         <script src="js/index.js"></script>
