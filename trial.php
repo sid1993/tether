@@ -203,7 +203,7 @@
           </form>
 
         </div>
-        </div>
+
         
         <div id="login">   
           <h1>Welcome Back!</h1>
@@ -232,8 +232,7 @@
 
         </div>
         
-      </div><!-- tab-content -->
-      
+      </div><!-- tab-content --><!-- /form -->
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
         <script src="js/index.js"></script>
