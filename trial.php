@@ -101,7 +101,6 @@
           
           <form action="" method="post" enctype="multipart/form-data" onSubmit="return chck_null_registration()">
           
-          <div class="top-row">
             <div class="field-wrap">
               <label>
                 First Name<span class="req">*</span>
