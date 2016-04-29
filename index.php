@@ -174,7 +174,7 @@
       embedParams: {
         generated: <?php print $generated; ?>,
         signature: "<?php print $signature; ?>",
-        color: "f97361"
+        color: "57ee9c"
       }
     });
   }
