@@ -202,7 +202,8 @@
           
           </form>
 
- 
+        </div>
+
         
         <div id="login">   
           <h1>Welcome Back!</h1>
