@@ -176,6 +176,19 @@
         signature: "<?php print $signature; ?>",
       }
     });
+	embed
+      .on("ready", onEmbedReady)
+      .on("stateChange", onEmbedStateChange);
+	  
+	  function onEmbedReady(){
+	  	embed.call("Sid", true);
+	  }
+	  function onEmbedStateChange(){
+	  	if (e.state == "call")
+		{
+			alert('Calling Dr.Sharma');
+		}
+	  }
   }
 </script>
 </section>
