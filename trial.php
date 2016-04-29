@@ -101,7 +101,7 @@
           
           <form action="" method="post" enctype="multipart/form-data" name="form1" id="form1" onSubmit="return chck_null_registration()">
           
-          <div class="top-row">
+          
             <div class="field-wrap">
               <label>
                 First Name<span class="req">*</span>
@@ -234,7 +234,7 @@
         
       </div><!-- tab-content -->
       
-</div> <!-- /form -->
+ <!-- /form -->
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
         <script src="js/index.js"></script>
