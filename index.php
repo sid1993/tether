@@ -75,7 +75,7 @@
                 <nav class="collapse navbar-collapse navbar-right" role="navigation">
                     <ul id="nav" class="nav navbar-nav">
                         <li class="current"><a href="#body">Home</a></li>
-                        <li><a href="#call">Connect</a></li>
+                        <li><a href="#gruveo">Connect</a></li>
                         <li><a href="#features">Features</a></li>
                         <li><a href="#works">Work</a></li>
                         <li><a href="#team">Team</a></li>
@@ -166,7 +166,7 @@
   var embed;
   function onGruveoEmbedAPIReady() {
     <?php
-      $secret = 'YOUR_API_KEY';
+      $secret = 'HJRNNrHpTE5ENEhXUR6PKVPS';
       $generated = time();
       $signature = base64_encode(hash_hmac('sha256', (string)$generated, $secret, TRUE));
     ?>
