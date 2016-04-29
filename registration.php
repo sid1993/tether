@@ -28,8 +28,8 @@
 		
 		if($up1 == true && $up2==true)
 		{
-		$sql="insert into registration(emailid,uid,fname,lname,cno,address,state,pincode,profession,uiid,uiphoto,doctor_reg_code,username,password,uphoto,status_code) values('$email','$uid','$fname','$lname','$cno','$address','$state','$pincode','$prof','$uiid','$uiphoto','$doctor_reg_code','$uname','$pass','$uphoto',0);";
-		$rec=mysql_query($sql);
+		$sql="insert into heroku_78c30c5595ce4d9.registration(emailid,uid,fname,lname,cno,address,state,pincode,profession,uiid,uiphoto,doctor_reg_code,username,password,uphoto,status_code) values('$email','$uid','$fname','$lname','$cno','$address','$state','$pincode','$prof','$uiid','$uiphoto','$doctor_reg_code','$uname','$pass','$uphoto',0);";
+		$res=mysqli_query($conn,$sql);
 		
 		echo "<script> alert('Success');
 				location.replace('login.php?');
