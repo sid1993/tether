@@ -197,10 +197,10 @@ if ($_SESSION['uid'])
 			$sql="insert into heroku_78c30c5595ce4d9.registration(status_code)values(1);";
 			$res=mysqli_query($conn,$sql);
 		?><?php */?>
-		
+		alert('Calling'+'<?php echo $_SESSION['uid'];?>');
 	  }
-	/*  function onEmbedStateChange(){
-	  	if (e.state == "callInit")
+	  function onEmbedStateChange(){
+	  /*	if (e.state == "callInit")
 		{
 			alert('Call initialized');
 		}
@@ -211,8 +211,8 @@ if ($_SESSION['uid'])
 		else if (e.state == "hangup")
 		{
 			alert('Call ended');
-		}
-	  }*/
+		}*/
+	  }
   }
 </script>
 </section>
