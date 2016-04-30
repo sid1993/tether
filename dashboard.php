@@ -190,7 +190,7 @@ if ($_SESSION['uid'])
   }
   
 	  function onEmbedReady(){
-	  	embed.call("Sid", true);
+	  	embed.call("<?php echo $_SESSION['uid']; ?>", true);
 	  }
 	  function onEmbedStateChange(){
 	  	if (e.state == "call")
