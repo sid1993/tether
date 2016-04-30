@@ -206,7 +206,7 @@ if ($_SESSION['uid'])
 			$sql="insert into heroku_78c30c5595ce4d9.registration(status_code)values(1) where uid="+$_SESSION['uid']+";";
 			$res=mysqli_query($conn,$sql);
 		?>
-		alert('Calling'+'<?php echo $_SESSION['name'];?>');
+		
 	  }
 	  function onBusy(){
 		  <?php
