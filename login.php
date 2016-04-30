@@ -45,7 +45,7 @@ body {
 			*/
 			echo "<script>
 					alert('Login Succesful !!');
-					location.replace('dashboard.php');
+					location.replace('dashboard.html');
 				</script>";
 		}
 		else

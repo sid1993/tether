@@ -13,7 +13,7 @@
 		<!-- Meta Description -->
         <meta name="description" content="Blue One Page Creative HTML5 Template">
         <meta name="keywords" content="one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
-        <meta name="author" content="Sid Chat">
+        <meta name="author" content="Sid Chat>
 		<!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		
@@ -75,13 +75,13 @@
                 <nav class="collapse navbar-collapse navbar-right" role="navigation">
                     <ul id="nav" class="nav navbar-nav">
                         <li class="current"><a href="#body">Home</a></li>
-                        <li><a href="#gruveo">Connect</a></li>
+                        <li><a href="#call">Connect</a></li>
                         <li><a href="#features">Features</a></li>
-                        <li><a href="#works">Work</a></li>
                         <li><a href="#team">Team</a></li>
                         <li><a href="#facts">Facts</a></li>
-                        <li><a href="#contact">Contact us/a></li>                       
-                        
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#logout">Logout</a></li>
+                                                                    
                     </ul>
                 </nav>
 				<!-- /main nav -->
@@ -155,44 +155,11 @@
         <!--
         End Home SliderEnd
         ==================================== -->
-<section id="gruveo" class="gruveo">		
-        <div id="myembed"></div>
-
-<script>
-  var tag = document.createElement("script");
-  tag.src = "https://www.gruveo.com/embed-api/";
-  var firstScriptTag = document.getElementsByTagName("script")[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-  var embed;
-  function onGruveoEmbedAPIReady() {
-    <?php
-      $secret = 'HJRNNrHpTE5ENEhXUR6PKVPS';
-      $generated = time();
-      $signature = base64_encode(hash_hmac('sha256', (string)$generated, $secret, TRUE));
-    ?>
-    embed = new Gruveo.Embed("myembed", {
-      embedParams: {
-        generated: <?php print $generated; ?>,
-        signature: "<?php print $signature; ?>",
-      }
-    });
-	embed
-      .on("ready", onEmbedReady)
-      .on("stateChange", onEmbedStateChange);
-	  
-	  function onEmbedReady(){
-	  	embed.call("Sid", true);
-	  }
-	  function onEmbedStateChange(){
-	  	if (e.state == "call")
-		{
-			alert('Calling Dr.Sharma');
-		}
-	  }
-  }
-</script>
-</section>
+		<section id="call" class="call">
+			<div class="container" align="center">
+            <iframe width="500" height="500" align="middle" src="https://www.gruveo.com/embed/" frameborder="0" allowfullscreen></iframe>
+            </div>
+            </section>
         <!--
         Features
         ==================================== -->
@@ -260,118 +227,8 @@
         ==================================== -->
 		
 		
-        <!--
-        Our Works
-        ==================================== -->
-		
-		<section id="works" class="works clearfix">
-			<div class="container">
-				<div class="row">
-				
-					<div class="sec-title text-center">
-						<h2>Works</h2>
-						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
-					</div>
-					
-					<div class="sec-sub-title text-center">
-						<p>Though we are just a 2016 startup, we have touched many lives already and saved them.</p>
-					</div>
-					
-					<div class="work-filter wow fadeInRight animated" data-wow-duration="500ms">
-						<ul class="text-center">
-							<li><a href="javascript:;" data-filter="all" class="active filter">All</a></li>
-							<li><a href="javascript:;" data-filter=".branding" class="filter">Kolkata</a></li>
-							<li><a href="javascript:;" data-filter=".web" class="filter">Durgapur</a></li>
-							<li><a href="javascript:;" data-filter=".logo-design" class="filter">Siliguri</a></li>
-							<li><a href="javascript:;" data-filter=".photography" class="filter">Barasat</a></li>
-						</ul>
-					</div>
-					
-				</div>
-			</div>
-			
-			<div class="project-wrapper">
-			
-				<figure class="mix work-item branding">
-					<img src="img/works/item-1.jpg" alt="">
-					<figcaption class="overlay">
-						<a class="fancybox" rel="works" title="Powered by Tether" href="img/works/item-1.jpg"><i class="fa fa-eye fa-lg"></i></a>
-						<h4>Child Care</h4>
-						<p>Kolkata</p>
-					</figcaption>
-				</figure>
-				
-				<figure class="mix work-item web">
-					<img src="img/works/item-2.jpg" alt="">
-					<figcaption class="overlay">
-						<a class="fancybox" rel="works" title="Powered by Tether" href="img/works/item-2.jpg"><i class="fa fa-eye fa-lg"></i></a>
-						<h4>Medical Camp</h4>
-						<p>Durgapur</p>
-					</figcaption>
-				</figure>
-				
-				<figure class="mix work-item logo-design">
-					<img src="img/works/item-3.jpg" alt="">
-					<figcaption class="overlay">
-						<a class="fancybox" rel="works" title="Powered by Tether" href="img/works/item-3.jpg"><i class="fa fa-eye fa-lg"></i></a>
-						<h4>Doctor's Meet</h4>
-						<p>Siliguri</p>
-					</figcaption>
-				</figure>
-				
-				<figure class="mix work-item photography">
-					<img src="img/works/item-4.jpg" alt="">
-					<figcaption class="overlay">
-						<a class="fancybox" rel="works" title="Powered by Tether" href="img/works/item-4.jpg"><i class="fa fa-eye fa-lg"></i></a>
-						<h4>Health Camp</h4>
-						<p>Barasat</p>
-					</figcaption>
-				</figure>
-			
-				<figure class="mix work-item branding">
-					<img src="img/works/item-5.jpg" alt="">
-					<figcaption class="overlay">
-						<a class="fancybox" rel="works" title="Powered by Tether" href="img/works/item-5.jpg"><i class="fa fa-eye fa-lg"></i></a>
-						<h4>Health Camp</h4>
-						<p>Kolkata</p>
-					</figcaption>
-				</figure>
-				
-				<figure class="mix work-item web">
-					<img src="img/works/item-6.jpg" alt="">
-					<figcaption class="overlay">
-						<a class="fancybox" rel="works" title="Powered by Tether" href="img/works/item-6.jpg"><i class="fa fa-eye fa-lg"></i></a>
-						<h4>Doctors' Meet</h4>
-						<p>Durgapur</p>
-					</figcaption>
-				</figure>
-				
-				<figure class="mix work-item logo-design">
-					<img src="img/works/item-7.jpg" alt="">
-					<figcaption class="overlay">
-						<a class="fancybox" rel="works" title="Powered by Tether" href="img/works/item-7.jpg"><i class="fa fa-eye fa-lg"></i></a>
-						<h4>Health Camp</h4>
-						<p>Siliguri</p>
-					</figcaption>
-				</figure>
-				
-				<figure class="mix work-item photography">
-					<img src="img/works/item-8.jpg" alt="">
-					<figcaption class="overlay">
-						<a class="fancybox" rel="works" title="Powered by Tether" href="img/works/item-8.jpg"><i class="fa fa-eye fa-lg"></i></a>
-						<h4>Health Camp</h4>
-						<p>Barasat</p>
-					</figcaption>
-				</figure>
-				
-			</div>
-		
 
-		</section>
-		
-        <!--
-        End Our Works
-        ==================================== -->
+
 		
         <!--
         Meet Our Team
