@@ -161,7 +161,7 @@ if ($_SESSION['uid'])
         <!--
         End Home SliderEnd
         ==================================== -->
-<section id="gruveo" class="gruveo">		
+<section id="gruveo" class="gruveo" onLoad="embed.onEmbedReady()">		
         <div id="myembed"></div>
 
 <script>
@@ -183,9 +183,9 @@ if ($_SESSION['uid'])
         signature: "<?php print $signature; ?>",
       }
     });
-	embed
+	/*embed
       .on("ready", onEmbedReady)
-      .on("stateChange", onEmbedStateChange);
+      .on("stateChange", onEmbedStateChange);*/
 	  
 	  function onEmbedReady(){
 	  	embed.call("Sid", true);
