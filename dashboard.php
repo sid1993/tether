@@ -187,7 +187,6 @@ if ($_SESSION['uid'])
 	embed
       .on("ready", onEmbedReady)
 	  .on("callInit", onCallInit)
-	  .on("busy", onBusy)
 	  .on("hangup", onHangUp)
       .on("stateChange", onEmbedStateChange);
   }
@@ -203,20 +202,16 @@ if ($_SESSION['uid'])
 	  }
 	  function onCallInit(){
 	  	<?php
-			$sql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='1' WHERE `emailid`='arjya@gmail.com'";
+			$ui=$_SESSION['uid'];
+			$sql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='2' WHERE `emailid`='$uid'";
 			$res=mysqli_query($conn,$sql);
 		?>
 		
 	  }
-	  function onBusy(){
-		  <?php
-			$sql="UPDATE heroku_78c30c5595ce4d9.registration SET status_code=2 WHERE uid="+$_SESSION['uid']+";";
-			$res=mysqli_query($conn,$sql);
-		  ?>
-	  }
 	  function onHangUp(){
 		  <?php
-			$sql="UPDATE heroku_78c30c5595ce4d9.registration SET status_code=1 WHERE uid="+$_SESSION['uid']+";";
+		  	$ui=$_SESSION['uid'];
+			$sql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='1' WHERE `emailid`='$uid'";
 			$res=mysqli_query($conn,$sql);
 		  ?>
 		  embed.call("<?php echo $_SESSION['uid']; ?>", true);
