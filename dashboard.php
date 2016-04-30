@@ -188,24 +188,15 @@ if ($_SESSION['uid'])
       .on("ready", onEmbedReady);
       .on("stateChange", onEmbedStateChange);
 	  
-	  function onEmbedReady(){
+	  function onEmbedReady(e){
 	  	embed.call("<?php echo $_SESSION['uid']; ?>", true);
 	  }
 	 
 	  function onEmbedStateChange(e){
-	  /*	if (e.state == "callInit")
+	if (e.state == "call")
 		{
-			alert('Call initialized');
-		}
-		else if (e.state == "busy")
-		{
-			alert('User Busy');
-		}
-		else if (e.state == "hangup")
-		{
-			alert('Call ended');
-		}*/
-	  }
+		
+	    }
   }
 </script>
 </section>
