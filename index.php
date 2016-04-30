@@ -80,8 +80,7 @@
                         <li><a href="#works">Work</a></li>
                         <li><a href="#team">Team</a></li>
                         <li><a href="#facts">Facts</a></li>
-                        <li><a href="#contact">Contact us<a></li>                       
-                        
+                        <li><a href="#contact">Contact us<a></li>                           
                     </ul>
                 </nav>
 				<!-- /main nav -->
