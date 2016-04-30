@@ -181,7 +181,8 @@
 	embed
       .on("ready", onEmbedReady)
       .on("stateChange", onEmbedStateChange);
-	  
+  }
+  
 	  function onEmbedReady(){
 	  	embed.call("Sid", true);
 	  }
@@ -191,7 +192,7 @@
 			alert('Calling Dr.Sharma');
 		}
 	  }
-  }
+
 </script>
 </section>
         <!--
