@@ -2,6 +2,7 @@
 session_start();
 if ($_SESSION['uid'])
 {
+	include "connection/connection.php";
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -185,10 +186,33 @@ if ($_SESSION['uid'])
     });
 	embed
       .on("ready", onEmbedReady)
+	  .on("callInit",onCallInit)
+	  .on("busy",onBusy)
+	  .on("hangup",onHangUp)
       .on("stateChange", onEmbedStateChange);
 	  
 	  function onEmbedReady(){
 	  	embed.call("<?php echo $_SESSION['uid']; ?>", true);
+	  }
+	  fuction onCallInit(){
+	  	<?php
+			$sql="insert into heroku_78c30c5595ce4d9.registration(status_code)values(1);";
+			$res=mysqli_query($conn,$sql);
+		?>
+		alert('Calling'+'<?php echo $_SESSION['name'];?>');
+	  }
+	  function onBusy(){
+		  <?php
+			$sql="insert into heroku_78c30c5595ce4d9.registration(status_code)values(2);";
+			$res=mysqli_query($conn,$sql);
+		  ?>
+	  }
+	  function onHangUp(){
+		  <?php
+			$sql="insert into heroku_78c30c5595ce4d9.registration(status_code)values(1);";
+			$res=mysqli_query($conn,$sql);
+		  ?>
+		  embed.call("<?php echo $_SESSION['uid']; ?>", true);
 	  }
 	  function onEmbedStateChange(){
 	  	if (e.state == "call")
