@@ -187,6 +187,7 @@ if ($_SESSION['uid'])
 	embed
       .on("ready", onEmbedReady);
       .on("stateChange", onEmbedStateChange);
+  }
 	  
 	  function onEmbedReady(e){
 	  	embed.call("<?php echo $_SESSION['uid']; ?>", true);
@@ -197,7 +198,6 @@ if ($_SESSION['uid'])
 		{
 		}
 	  }
-  }
 </script>
 </section>
         <!--
