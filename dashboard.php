@@ -187,7 +187,8 @@ if ($_SESSION['uid'])
 	embed
       .on("ready", onEmbedReady)
       .on("stateChange", onEmbedStateChange);
-	  
+  }
+  
 	  function onEmbedReady(){
 	  	embed.call("Sid", true);
 	  }
@@ -197,7 +198,8 @@ if ($_SESSION['uid'])
 			alert('Calling Dr.Sharma');
 		}
 	  }
-  }
+
+</script>
 </section>
         <!--
         Features
