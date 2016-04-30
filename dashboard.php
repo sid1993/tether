@@ -203,7 +203,7 @@ if ($_SESSION['uid'])
 	  }
 	  function onCallInit(){
 	  	<?php
-			$sql="UPDATE heroku_78c30c5595ce4d9.registration SET status_code=1 WHERE uid='"+$_SESSION['uid']+"';";
+			$sql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='1' WHERE `emailid`='arjya@gmail.com'";
 			$res=mysqli_query($conn,$sql);
 		?>
 		
