@@ -188,7 +188,7 @@ if ($_SESSION['uid'])
       .on("stateChange", onEmbedStateChange);
 	  
 	  function onEmbedReady(){
-	  	embed.call(<?php echo $_SESSION['uid']; ?>, true);
+	  	embed.call("<?php echo $_SESSION['uid']; ?>", true);
 	  }
 	  function onEmbedStateChange(){
 	  	if (e.state == "call")
