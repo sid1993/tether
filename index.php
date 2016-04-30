@@ -77,7 +77,7 @@
                         <li class="current"><a href="#body">Home</a></li>
                         <li><a href="#call">Connect</a></li>
                         <li><a href="#features">Features</a></li>
-                        <li><a href="#work">Works</a></li>
+                        <li><a href="#works">Works</a></li>
                         <li><a href="#team">Team</a></li>
                         <li><a href="#facts">Facts</a></li>
                         <li><a href="#contact">Contact</a></li>
