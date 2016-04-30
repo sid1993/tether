@@ -185,10 +185,7 @@ if ($_SESSION['uid'])
       }
     });
 	embed
-      .on("ready", onEmbedReady)
-	  .on("callInit",onCallInit)
-	  .on("busy",onBusy)
-	  .on("hangup",onHangUp)
+      .on("ready", onEmbedReady);
       .on("stateChange", onEmbedStateChange);
 	  
 	  function onEmbedReady(){
@@ -215,9 +212,17 @@ if ($_SESSION['uid'])
 		  embed.call("<?php echo $_SESSION['uid']; ?>", true);
 	  }
 	  function onEmbedStateChange(){
-	  	if (e.state == "call")
+	  	if (e.state == "callInit")
 		{
-			alert('Calling Dr.Sharma');
+			onCallInit();
+		}
+		else if (e.state == "busy")
+		{
+			onBusy();
+		}
+		else if (e.state == "hangup")
+		{
+			onHangUp();
 		}
 	  }
   }
