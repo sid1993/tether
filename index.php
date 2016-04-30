@@ -52,7 +52,7 @@
         <!-- 
         Fixed Navigation
         ==================================== -->
-        <header id="navigation" class="navbar-fixed-top navbar">
+      <header id="navigation" class="navbar-fixed-top navbar">
             <div class="container">
                 <div class="navbar-header">
                     <!-- responsive nav button -->
@@ -75,12 +75,14 @@
                 <nav class="collapse navbar-collapse navbar-right" role="navigation">
                     <ul id="nav" class="nav navbar-nav">
                         <li class="current"><a href="#body">Home</a></li>
-                        <li><a href="#gruveo">Connect</a></li>
+                        <li><a href="#call">Connect</a></li>
                         <li><a href="#features">Features</a></li>
-                        <li><a href="#works">Work</a></li>
+                        <li><a href="#work">Works</a></li>
                         <li><a href="#team">Team</a></li>
                         <li><a href="#facts">Facts</a></li>
-                        <li><a href="#contact">Contact us<a></li>                           
+                        <li><a href="#contact">Contact</a></li>
+                        
+                                                                    
                     </ul>
                 </nav>
 				<!-- /main nav -->
