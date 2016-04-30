@@ -186,13 +186,20 @@ if ($_SESSION['uid'])
     });
 	embed
       .on("ready", onEmbedReady);
-      /*.on("stateChange", onEmbedStateChange);*/
+	  .on("callInit", onCallInit);
+      .on("stateChange", onEmbedStateChange);
 	  
 	  function onEmbedReady(){
 	  	embed.call("<?php echo $_SESSION['uid']; ?>", true);
 	  }
-	
-	  /*function onEmbedStateChange(){
+	  fuction onCallInit(){
+	  	<?php
+			$sql="insert into heroku_78c30c5595ce4d9.registration(status_code)values(1);";
+			$res=mysqli_query($conn,$sql);
+		?>
+		alert('Calling'+'<?php echo $_SESSION['name'];?>');
+	  }
+	/*  function onEmbedStateChange(){
 	  	if (e.state == "callInit")
 		{
 			alert('Call initialized');
