@@ -193,17 +193,9 @@ if ($_SESSION['uid'])
 	  }
 	 
 	  function onEmbedStateChange(e){
-	if (e.state == "call")
+		if (e.state == "call")
 		{
-			e.on("callInit",oncallInit);
-	    }
-	  }
-	  function onCallInit(){
-	  	<?php
-			$sql="insert into heroku_78c30c5595ce4d9.registration(status_code)values(1);";
-			$res=mysqli_query($conn,$sql);
-		?>
-		alert('Calling'+'<?php echo $_SESSION['name'];?>');
+		}
 	  }
   }
 </script>
