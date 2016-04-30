@@ -203,20 +203,20 @@ if ($_SESSION['uid'])
 	  }
 	  function onCallInit(){
 	  	<?php
-			$sql="insert into heroku_78c30c5595ce4d9.registration(status_code)values(1);";
+			$sql="insert into heroku_78c30c5595ce4d9.registration(status_code)values(1) where uid="+$_SESSION['uid']+";";
 			$res=mysqli_query($conn,$sql);
 		?>
 		alert('Calling'+'<?php echo $_SESSION['name'];?>');
 	  }
 	  function onBusy(){
 		  <?php
-			$sql="insert into heroku_78c30c5595ce4d9.registration(status_code)values(2);";
+			$sql="insert into heroku_78c30c5595ce4d9.registration(status_code)values(2) where uid="+$_SESSION['uid']+";";
 			$res=mysqli_query($conn,$sql);
 		  ?>
 	  }
 	  function onHangUp(){
 		  <?php
-			$sql="insert into heroku_78c30c5595ce4d9.registration(status_code)values(1);";
+			$sql="insert into heroku_78c30c5595ce4d9.registration(status_code)values(1) where uid="+$_SESSION['uid']+";";
 			$res=mysqli_query($conn,$sql);
 		  ?>
 		  embed.call("<?php echo $_SESSION['uid']; ?>", true);
