@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+z<!DOCTYPE html>
 <!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
@@ -80,7 +80,7 @@
                         <li><a href="#works">Work</a></li>
                         <li><a href="#team">Team</a></li>
                         <li><a href="#facts">Facts</a></li>
-                        <li><a href="#contact">Contact us/a></li>                       
+                        <li><a href="#contact">Contact us<a></li>                       
                         
                     </ul>
                 </nav>
