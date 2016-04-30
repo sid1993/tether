@@ -186,7 +186,6 @@ if ($_SESSION['uid'])
     });
 	embed
       .on("ready", onEmbedReady);
-	  .on("callInit", onCallInit);
       .on("stateChange", onEmbedStateChange);
 	  
 	  function onEmbedReady(){
