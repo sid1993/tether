@@ -186,6 +186,7 @@ if ($_SESSION['uid'])
     });
 	embed
       .on("ready", onEmbedReady)
+	  .on("callInit", onCallInit)
       .on("stateChange", onEmbedStateChange);
   }
   
@@ -197,6 +198,13 @@ if ($_SESSION['uid'])
 		{
 			alert('Calling Dr.Sharma');
 		}
+	  }
+	  function onCallInit(){
+	  	<?php
+			$sql="insert into heroku_78c30c5595ce4d9.registration(status_code)values(1);";
+			$res=mysqli_query($conn,$sql);
+		?>
+		alert('Calling'+'<?php echo $_SESSION['name'];?>');
 	  }
 
 </script>
