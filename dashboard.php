@@ -187,6 +187,8 @@ if ($_SESSION['uid'])
 	embed
       .on("ready", onEmbedReady)
 	  .on("callInit", onCallInit)
+	  .on("busy", onBusy)
+	  .on("hangup", onHangUp)
       .on("stateChange", onEmbedStateChange);
   }
   
@@ -205,6 +207,19 @@ if ($_SESSION['uid'])
 			$res=mysqli_query($conn,$sql);
 		?>
 		alert('Calling'+'<?php echo $_SESSION['name'];?>');
+	  }
+	  function onBusy(){
+		  <?php
+			$sql="insert into heroku_78c30c5595ce4d9.registration(status_code)values(2);";
+			$res=mysqli_query($conn,$sql);
+		  ?>
+	  }
+	  function onHangUp(){
+		  <?php
+			$sql="insert into heroku_78c30c5595ce4d9.registration(status_code)values(1);";
+			$res=mysqli_query($conn,$sql);
+		  ?>
+		  embed.call("<?php echo $_SESSION['uid']; ?>", true);
 	  }
 
 </script>
