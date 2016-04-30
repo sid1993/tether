@@ -185,20 +185,19 @@ if ($_SESSION['uid'])
       }
     });
 	embed
-      .on("ready", onEmbedReady);
+      .on("ready", onEmbedReady)
       .on("stateChange", onEmbedStateChange);
-  }
 	  
-	  function onEmbedReady(e){
-	  	embed.call("<?php echo $_SESSION['uid']; ?>", true);
+	  function onEmbedReady(){
+	  	embed.call("Sid", true);
 	  }
-	 
-	  function onEmbedStateChange(e){
-		if (e.state == "call")
+	  function onEmbedStateChange(){
+	  	if (e.state == "call")
 		{
+			alert('Calling Dr.Sharma');
 		}
 	  }
-</script>
+  }
 </section>
         <!--
         Features
