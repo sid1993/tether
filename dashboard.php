@@ -161,7 +161,7 @@ if ($_SESSION['uid'])
         <!--
         End Home SliderEnd
         ==================================== -->
-<section id="gruveo" class="gruveo" onLoad="onEmbedReady()">		
+<section id="gruveo" class="gruveo">		
         <div id="myembed"></div>
 
 <script>
@@ -188,7 +188,7 @@ if ($_SESSION['uid'])
       .on("stateChange", onEmbedStateChange);
 	  
 	  function onEmbedReady(){
-	  	embed.call("Sid", true);
+	  	embed.call(<?php echo $_SESSION['uid']; ?>, true);
 	  }
 	  function onEmbedStateChange(){
 	  	if (e.state == "call")
