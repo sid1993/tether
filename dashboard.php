@@ -1,3 +1,8 @@
+<?php
+session_start();
+if ($_SESSION['uid'])
+{
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -655,3 +660,13 @@
 		</script>
     </body>
 </html>
+<?php
+}
+else
+{
+	echo "<script>
+					alert('You need to login first !!');
+					location.replace('login.php?');
+				</script>";
+}
+?>

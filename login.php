@@ -31,18 +31,18 @@ body {
 		$sql="SELECT * FROM heroku_78c30c5595ce4d9.registration where emailid='$emailid';";
 		$res=mysqli_query($conn,$sql);
 		$fres=mysqli_fetch_assoc($res);
-		print_r($fres);
+		#print_r($fres);
 		$db_pass=$fres['password'];
 		
 		if($pass==$db_pass)
 		{
-			/*session_start();
+			session_start();
 			$_SESSION['name']=$fres['fname']." ".$fres['lname'];
 			$_SESSION['uid']=$fres['uid'];
 			$_SESSION['uiid']=$fres['uiid'];
-			$_SESSION['uiphoto']=$fres['uiphoto'];
-			$_SESSION['uphoto']=$fres['uphoto'];
-			*/
+			$_SESSION['status_code']=$fres['status_code'];
+			
+			
 			echo "<script>
 					alert('Login Succesful !!');
 					location.replace('dashboard.php');
