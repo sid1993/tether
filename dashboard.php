@@ -191,38 +191,19 @@ if ($_SESSION['uid'])
 	  function onEmbedReady(){
 	  	embed.call("<?php echo $_SESSION['uid']; ?>", true);
 	  }
-	  fuction onCallInit(){
-	  	<?php
-			$sql="insert into heroku_78c30c5595ce4d9.registration(status_code)values(1);";
-			$res=mysqli_query($conn,$sql);
-		?>
-		alert('Calling'+'<?php echo $_SESSION['name'];?>');
-	  }
-	  function onBusy(){
-		  <?php
-			$sql="insert into heroku_78c30c5595ce4d9.registration(status_code)values(2);";
-			$res=mysqli_query($conn,$sql);
-		  ?>
-	  }
-	  function onHangUp(){
-		  <?php
-			$sql="insert into heroku_78c30c5595ce4d9.registration(status_code)values(1);";
-			$res=mysqli_query($conn,$sql);
-		  ?>
-		  embed.call("<?php echo $_SESSION['uid']; ?>", true);
-	  }
+	
 	  function onEmbedStateChange(){
 	  	if (e.state == "callInit")
 		{
-			onCallInit();
+			alert('Call initialized');
 		}
 		else if (e.state == "busy")
 		{
-			onBusy();
+			alert('User Busy');
 		}
 		else if (e.state == "hangup")
 		{
-			onHangUp();
+			alert('Call ended');
 		}
 	  }
   }
