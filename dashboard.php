@@ -520,6 +520,20 @@ if ($_SESSION['uid'])
         <!--
         End Contact Us
         ==================================== -->
+        <section id="logout">
+        	<script>
+				var r=confirm('Are you sure you ?');
+				if(r==true)
+				{
+					<?php
+						$emailid=$_SESSION['emailid'];
+						$sql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='0' WHERE `emailid`='$emailid'";
+						$res=mysqli_query($conn,$sql);
+						session_destroy();
+					?>
+				}
+			</script>
+        </section>
 		
 		
 		<footer id="footer" class="footer">
