@@ -51,6 +51,7 @@ if ($_SESSION['uid'])
 					{
 						endCall();
 						<?php
+						$conn = new mysqli($server, $username, $password, $db);
 						$emailid=$_SESSION['emailid'];
 						$lsql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='0' WHERE `emailid`='arjya@gmail.com'";
 						$lres=mysqli_query($conn,$lsql);
@@ -218,6 +219,7 @@ if ($_SESSION['uid'])
 	  }
 	  function onCallInit(){
 	  	<?php
+			$conn = new mysqli($server, $username, $password, $db);
 			$emailid=$_SESSION['emailid'];
 			$csql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='2' WHERE `emailid`='$emailid'";
 			$cres=mysqli_query($conn,$csql);
@@ -227,6 +229,7 @@ if ($_SESSION['uid'])
 	  }
 	  function onHangUp(){
 		  <?php
+		  	$conn = new mysqli($server, $username, $password, $db);
 		  	$emailid=$_SESSION['emailid'];
 			$hsql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='8' WHERE `emailid`='$emailid'";
 			$hres=mysqli_query($conn,$hsql);
