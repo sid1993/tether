@@ -197,6 +197,7 @@ if ($_SESSION['uid'])
       embedParams: {
         generated: <?php print $generated; ?>,
         signature: "<?php print $signature; ?>",
+		code:"<?php echo $_SESSION['uid']; ?>"
       }
     });
 	embed
