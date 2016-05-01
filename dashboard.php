@@ -51,7 +51,7 @@ if ($_SESSION['uid'])
 					{
 						<?php
 						$emailid=$_SESSION['emailid'];
-						$sql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='0' WHERE `emailid`='$emailid'";
+						$sql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='0' WHERE `emailid`='arjya@gmail.com'";
 						$res=mysqli_query($conn,$sql);
 						session_destroy();
 						?>
