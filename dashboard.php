@@ -3,6 +3,10 @@ session_start();
 if ($_SESSION['uid'])
 {
 	include "connection/connection.php";
+			$logsql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='1' WHERE `emailid`='$emailid'";
+			$logres=mysqli_query($conn,$logsql);
+			$logfres=mysqli_fetch_assoc($logres);
+			print_r($logfres);
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
