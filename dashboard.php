@@ -226,7 +226,7 @@ if ($_SESSION['uid'])
 	  function onHangUp(){
 		  <?php
 		  	$emailid=$_SESSION['emailid'];
-			$hsql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='1' WHERE `emailid`='$emailid'";
+			$hsql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='8' WHERE `emailid`='$emailid'";
 			$hres=mysqli_query($conn,$hsql);
 		  ?>
 		  /*embed.call("<?php /*?><?php echo $_SESSION['uid']; ?><?php */?>", true);*/
