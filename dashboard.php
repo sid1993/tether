@@ -53,7 +53,7 @@ if ($_SESSION['uid'])
 						<?php
 						
 						$emailid=$_SESSION['emailid'];
-						$lsql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='0' WHERE `emailid`='$emailid'";
+						$lsql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='8' WHERE `emailid`='$emailid'";
 						$lres=mysqli_query($conn,$lsql);
 						session_destroy();
 						?>
