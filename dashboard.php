@@ -49,6 +49,7 @@ if ($_SESSION['uid'])
 					var r=confirm('Are you sure you ?');
 					if(r==true)
 					{
+						endCall();
 						<?php
 						$emailid=$_SESSION['emailid'];
 						$sql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='0' WHERE `emailid`='arjya@gmail.com'";
@@ -230,6 +231,10 @@ if ($_SESSION['uid'])
 		  ?>
 		  embed.call("<?php echo $_SESSION['uid']; ?>", true);
 	  }
+	  function endCall() {
+      		embed.end();
+    	}
+
 
 </script>
 </section>
