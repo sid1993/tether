@@ -54,6 +54,7 @@ if ($_SESSION['uid'])
 						$emailid=$_SESSION['emailid'];
 						$lsql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='0' WHERE `emailid`='arjya@gmail.com'";
 						$lres=mysqli_query($conn,$lsql);
+						mysqli_close($conn);
 						session_destroy();
 						?>
 						location.replace('login.php?');
@@ -220,6 +221,7 @@ if ($_SESSION['uid'])
 			$emailid=$_SESSION['emailid'];
 			$csql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='2' WHERE `emailid`='$emailid'";
 			$cres=mysqli_query($conn,$csql);
+			mysqli_close($conn);
 		?>
 		
 	  }
@@ -228,6 +230,7 @@ if ($_SESSION['uid'])
 		  	$emailid=$_SESSION['emailid'];
 			$hsql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='8' WHERE `emailid`='$emailid'";
 			$hres=mysqli_query($conn,$hsql);
+			mysqli_close($conn);
 		  ?>
 		  /*embed.call("<?php /*?><?php echo $_SESSION['uid']; ?><?php */?>", true);*/
 	  }

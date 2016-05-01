@@ -31,6 +31,7 @@ body {
 		$sql="SELECT * FROM heroku_78c30c5595ce4d9.registration where emailid='$emailid';";
 		$res=mysqli_query($conn,$sql);
 		$fres=mysqli_fetch_assoc($res);
+		mysqli_close($conn);
 		print_r($fres);
 		$db_pass=$fres['password'];
 		
@@ -46,6 +47,7 @@ body {
 			$logsql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='1' WHERE `emailid`='$emailid'";
 			$logres=mysqli_query($conn,$logsql);
 			$logfres=mysqli_fetch_assoc($logres);
+			mysqli_close($conn);
 			print_r($logfres);
 			
 			echo "<script>
