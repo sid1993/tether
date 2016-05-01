@@ -233,6 +233,7 @@ if ($_SESSION['uid'])
 	  }
 	  function endCall() {
       		embed.end();
+			alert('Call Ended');
     	}
 
 
