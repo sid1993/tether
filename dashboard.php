@@ -52,8 +52,8 @@ if ($_SESSION['uid'])
 						endCall();
 						<?php
 						$emailid=$_SESSION['emailid'];
-						$sql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='0' WHERE `emailid`='arjya@gmail.com'";
-						$res=mysqli_query($conn,$sql);
+						$lsql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='0' WHERE `emailid`='arjya@gmail.com'";
+						$lres=mysqli_query($conn,$lsql);
 						session_destroy();
 						?>
 						location.replace('login.php?');
@@ -218,22 +218,21 @@ if ($_SESSION['uid'])
 	  function onCallInit(){
 	  	<?php
 			$emailid=$_SESSION['emailid'];
-			$sql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='2' WHERE `emailid`='$emailid'";
-			$res=mysqli_query($conn,$sql);
+			$csql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='2' WHERE `emailid`='$emailid'";
+			$cres=mysqli_query($conn,$csql);
 		?>
 		
 	  }
 	  function onHangUp(){
 		  <?php
 		  	$emailid=$_SESSION['emailid'];
-			$sql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='1' WHERE `emailid`='$emailid'";
-			$res=mysqli_query($conn,$sql);
+			$hsql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='1' WHERE `emailid`='$emailid'";
+			$hres=mysqli_query($conn,$hsql);
 		  ?>
 		  /*embed.call("<?php /*?><?php echo $_SESSION['uid']; ?><?php */?>", true);*/
 	  }
 	  function endCall() {
       		embed.end();
-			alert('Call Ended');
     	}
 
 
