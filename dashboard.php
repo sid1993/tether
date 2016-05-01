@@ -100,7 +100,7 @@ if ($_SESSION['uid'])
                         <li><a href="#team">Team</a></li>
                         <li><a href="#facts">Facts</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <li><a href="logout()">Logout</a></li>
+                        <li><a href="javascript:void(0);" onclick="logout();">LogOut</a></li>
                         
                                                                     
                     </ul>
