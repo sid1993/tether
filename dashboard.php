@@ -531,6 +531,7 @@ if ($_SESSION['uid'])
 						$res=mysqli_query($conn,$sql);
 						session_destroy();
 					?>
+					location.replace('login.php?');
 				}
 			</script>
         </section>
