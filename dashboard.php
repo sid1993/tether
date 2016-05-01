@@ -96,7 +96,7 @@ if ($_SESSION['uid'])
                 <nav class="collapse navbar-collapse navbar-right" role="navigation">
                     <ul id="nav" class="nav navbar-nav">
                         <li class="current"><a href="#body">Home</a></li>
-                        <li><a href="#gruveo">Connect</a></li>
+                        <li><a href="#gruveo" onclick="onEmbedReady();">Connect</a></li>
                         <li><a href="#features">Features</a></li>
                         <li><a href="#team">Team</a></li>
                         <li><a href="#facts">Facts</a></li>
@@ -200,7 +200,6 @@ if ($_SESSION['uid'])
       }
     });
 	embed
-      .on("ready", onEmbedReady)
 	  .on("callInit", onCallInit)
 	  .on("hangup", onHangUp)
       .on("stateChange", onEmbedStateChange);
