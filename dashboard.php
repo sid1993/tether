@@ -44,6 +44,21 @@ if ($_SESSION['uid'])
 
 		<!-- Modernizer Script for old Browsers -->
         <script src="js/modernizr-2.6.2.min.js"></script>
+        <script>
+		function logout(){
+				var r=confirm('Are you sure you ?');
+				if(r==true)
+				{
+					<?php
+						$emailid=$_SESSION['emailid'];
+						$sql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='0' WHERE `emailid`='$emailid'";
+						$res=mysqli_query($conn,$sql);
+						session_destroy();
+					?>
+					location.replace('login.php?');
+				}
+		}
+			</script>
 
     </head>
 	
@@ -86,7 +101,7 @@ if ($_SESSION['uid'])
                         <li><a href="#team">Team</a></li>
                         <li><a href="#facts">Facts</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <li><a href="#logout">Log Out</a></li>
+                        <li><button onClick="logout()">Logout</button></li>
                         
                                                                     
                     </ul>
@@ -520,22 +535,8 @@ if ($_SESSION['uid'])
         <!--
         End Contact Us
         ==================================== -->
-        <section id="logout">
-        	<script>
-				var r=confirm('Are you sure you ?');
-				if(r==true)
-				{
-					<?php
-						$emailid=$_SESSION['emailid'];
-						$sql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='0' WHERE `emailid`='$emailid'";
-						$res=mysqli_query($conn,$sql);
-						session_destroy();
-					?>
-					location.replace('login.php?');
-				}
-			</script>
-        </section>
-		
+    
+        	
 		
 		<footer id="footer" class="footer">
 			<div class="container">
