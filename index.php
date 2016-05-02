@@ -227,9 +227,8 @@
 			  alert('Entered Q');
 		  $.ajax({
                               url:"queque.php",
-                              cache: false,
           					success: function(data){
-             					$("#gruveo").html("#gruveo");
+             					 location.reload();;
           						} 
  
                           });
