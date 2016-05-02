@@ -3,7 +3,7 @@
 	$sql="SELECT uid FROM heroku_78c30c5595ce4d9.registration where status_code=1;";
 	$res=mysqli_query($conn,$sql);
 	$results_array = array();
-	while ($row = $result->fetch_assoc()) {
+	while ($row = $res->fetch_assoc()) {
     	$results_array[] = $row;
 	}
 	print_r($results_array);
