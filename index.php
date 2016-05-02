@@ -2,8 +2,11 @@
 	include "connection/connection.php";
 	$sql="SELECT uid FROM heroku_78c30c5595ce4d9.registration where status_code=1;";
 	$res=mysqli_query($conn,$sql);
-	$fres=mysqli_fetch_assoc($res);
-	print_r($fres);
+	$results_array = array();
+	while ($row = $result->fetch_assoc()) {
+    	$results_array[] = $row;
+	}
+	print_r($results_array);
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
