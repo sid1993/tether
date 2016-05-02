@@ -224,6 +224,7 @@
 	  }
 	  function queque()
 		  {
+			  alert('Entered Q');
 		  $.ajax({
                               url:"queque.php",
                               cache: false,
