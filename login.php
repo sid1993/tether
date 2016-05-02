@@ -67,8 +67,7 @@ body {
   </div>
   <p align="center" class="style1">&nbsp;</p>
   <p align="center" class="style1"><img src="images/guest.png" width="128" height="128" /></p>
-  <header class="w3-container w3-teal">
-  <table width="26%" height="110"  align="center" cellpadding="1" cellspacing="1">
+  <table width="26%" height="110"  align="center" cellpadding="1" cellspacing="1" class="w3-table w3-teal">
     <tr>
       <td width="22%" height="37"  align="right"><span class="style2">Email ID </span></td>
       <td width="12%" align="center">:</td>
@@ -85,6 +84,5 @@ body {
   </table>
   <p align="center" class="style3"><a href="registration.php">Register</a> , if you have no account. </p>
 </form>
-</header>
 </body>
 </html>
