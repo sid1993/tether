@@ -229,7 +229,7 @@
                               url:"queque.php",
                               data:"",
                               success:function(data){
-                                 $("myembed").load(location.href + "myembed");
+                                 $("myembed").load("https://tether.herokuapp.com/#gruveo");
                               }
  
                           });
