@@ -2,7 +2,7 @@
 session_start();
 if ($_SESSION['uid'])
 {
-	include "connection/connection.php";
+	/*include "connection/connection.php";*/
 			
 ?>
 <!DOCTYPE html>
@@ -44,6 +44,8 @@ if ($_SESSION['uid'])
         <link rel="stylesheet" href="css/media-queries.css">
 
 		<!-- Modernizer Script for old Browsers -->
+        <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+       <script type="text/javascript" src="js/jquery-ui-1.8.17.custom.min.js"></script>
         <script src="js/modernizr-2.6.2.min.js"></script>
 		<script>
 				function logout(){
@@ -51,13 +53,15 @@ if ($_SESSION['uid'])
 					if(r==true)
 					{
 						endCall();
-						<?php
-						
-						$emailid=$_SESSION['emailid'];
-						$lsql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='8' WHERE `emailid`='$emailid'";
-						$lres=mysqli_query($conn,$lsql);
-						session_destroy();
-						?>
+						$.ajax({
+                              type:"post",
+                              url:"update.php",
+                              data:"status_code="+0+"&emailid="+"<?php echo $_SESSION['emailid'];?>",
+                              success:function(data){
+                                 
+                              }
+ 
+                          });
 						location.replace('login.php?');
 					}
 				}
@@ -219,27 +223,38 @@ if ($_SESSION['uid'])
 		}
 	  }
 	  function onCallInit(){
-	  	<?php
-			$emailid=$_SESSION['emailid'];
-			$sql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='1' WHERE `emailid`='$emailid'";
-			$res=mysqli_query($conn,$sql);
-		?>
+	  	$.ajax({
+                              type:"post",
+                              url:"update.php",
+                              data:"status_code="+1+"&emailid="+"<?php echo $_SESSION['emailid'];?>",
+                              success:function(data){
+                                 
+                              }
+ 
+                          });
 		
 	  }
 	  function onBusy(){
-		  <?php
-		  	$emailid=$_SESSION['emailid'];
-			$sql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='2' WHERE `emailid`='$emailid'";
-			$res=mysqli_query($conn,$sql);
-		  ?>
+				$.ajax({
+                              type:"post",
+                              url:"update.php",
+                              data:"status_code="+2+"&emailid="+"<?php echo $_SESSION['emailid'];?>",
+                              success:function(data){
+                                 
+                              }
+ 
+                          });
 	  }
 	  function onHangUp(){
-		  <?php
-		  	$emailid=$_SESSION['emailid'];
-			$sql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='3' WHERE `emailid`='$emailid'";
-			$res=mysqli_query($conn,$sql);
-		  ?>
-		  <?php /*?>embed.call("<?php echo $_SESSION['uid']; ?>", true);<?php */?>
+				$.ajax({
+                              type:"post",
+                              url:"update.php",
+                              data:"status_code="+3+"&emailid="+"<?php echo $_SESSION['emailid'];?>",
+                              success:function(data){
+                                 
+                              }
+ 
+                          });
 	  }
 	  function endCall() {
       		embed.end();
