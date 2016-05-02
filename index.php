@@ -226,9 +226,10 @@
 		  {
 		  $.ajax({
                               url:"queque.php",
-                              success:function(data){
-                                 onGruveoEmbedAPIReady();
-                              }
+                              cache: false,
+          					success: function(data){
+             					$("#myembed").html(data);
+          						} 
  
                           });
 			
