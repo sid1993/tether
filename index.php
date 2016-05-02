@@ -249,10 +249,10 @@
 	  						.on("busy", onBusy)
 	  						.on("hangup", onHangUp)
       						.on("stateChange", onEmbedStateChange);
-  				}
-			 }
+  			}
+		}
 			
-		  }
+
 
 </script>
 </section>  
