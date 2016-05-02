@@ -6,6 +6,13 @@
 	while ($row = $res->fetch_assoc()) {
     	$idle_user[] = $row;
 	}
+	if($idle_user)
+	{
+		//random uid selection
+		$length=sizeof($idle_user);
+		$randomIndex=rand(0,$length-1);
+		$selected_uid=$idle_user[$randomIndex]['uid'];
+	}
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -167,15 +174,7 @@
         ==================================== -->
        
 <section id="gruveo" class="gruveo">
- <?php
- 		if($idle_user)
-	{
-		//random uid selection
-		$length=sizeof($idle_user);
-		$randomIndex=rand(0,$length-1);
-		$selected_uid=$idle_user[$randomIndex]['uid'];
- ?>		
-        <div id="myembed"></div>
+<div id="myembed"></div>
 
 <script>
   var tag = document.createElement("script");
@@ -215,29 +214,7 @@
 	  }
 
 </script>
-
-<?php
-	}
-	else
-	{
-		$usql="SELECT uid FROM heroku_78c30c5595ce4d9.registration where status_code>1;";
-		$ures=mysqli_query($conn,$usql);
-		$non_idle_user = array();
-		while ($row = $ures->fetch_assoc()) {
-    		$non_idle_user[] = $row;
-		}
-		if($non_idle_user[])
-		{
-			echo "<h1>All Doctors are BUSY!!! Please wait for sometime and try again!<h1>";
-		}
-		else
-		{
-			echo "<h1>No Doctors Available Now!<h1>";
-		}
-		
-	}
-?>
-      </section>  
+</section>  
       <!--  Features
         ==================================== -->
 		
