@@ -201,7 +201,7 @@
   }
   
 	  function onEmbedReady(){
-	  	embed.call();
+	  	embed.call(code,true);
 	  }
 	  function onEmbedStateChange(){
 	  	if (e.state == "call")
