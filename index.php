@@ -229,11 +229,11 @@
                               url:"queque.php",
                               data:"",
                               success:function(data){
-                                 
+                                 $("myembed").load(location.href + "myembed");
                               }
  
                           });
-			$("myembed").load(location.href + "myembed");
+			
 		  }
 
 </script>
