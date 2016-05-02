@@ -201,7 +201,7 @@
   }
   
 	  function onEmbedReady(){
-	  	embed.call(code,true);
+	  	embed.call("<?php echo $selected_uid; ?>",true);
 	  }
 	  function onEmbedStateChange(){
 	  	if (e.state == "call")
