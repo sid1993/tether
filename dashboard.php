@@ -51,13 +51,7 @@ if ($_SESSION['uid'])
 					if(r==true)
 					{
 						endCall();
-						<?php
 						
-						$emailid=$_SESSION['emailid'];
-						$lsql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='8' WHERE `emailid`='$emailid'";
-						$lres=mysqli_query($conn,$lsql);
-						session_destroy();
-						?>
 						location.replace('login.php?');
 					}
 				}
@@ -218,12 +212,24 @@ if ($_SESSION['uid'])
 		}
 	  }
 	  function onCallInit(){
-	  	
-		
+	  	<?php
+			$sql="insert into heroku_78c30c5595ce4d9.registration(status_code)values(1);";
+			$res=mysqli_query($conn,$sql);
+		?>
+		alert('Calling'+'<?php echo $_SESSION['name'];?>');
+	  }
+	  function onBusy(){
+		  <?php
+			$sql="insert into heroku_78c30c5595ce4d9.registration(status_code)values(2);";
+			$res=mysqli_query($conn,$sql);
+		  ?>
 	  }
 	  function onHangUp(){
-
-		  /*embed.call("<?php /*?><?php echo $_SESSION['uid']; ?><?php */?>", true);*/
+		  <?php
+			$sql="insert into heroku_78c30c5595ce4d9.registration(status_code)values(1);";
+			$res=mysqli_query($conn,$sql);
+		  ?>
+		  embed.call("<?php echo $_SESSION['uid']; ?>", true);
 	  }
 	  function endCall() {
       		embed.end();
