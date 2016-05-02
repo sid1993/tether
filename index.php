@@ -185,6 +185,11 @@
 
   var embed;
   function onGruveoEmbedAPIReady() {
+	  var generated_code="<?php echo $selected_uid; ?>";
+	  if(!generated_code)
+	  {
+		  document.write("<h1>Please Wait...<h1>");
+	  }
     <?php
       $secret = 'HJRNNrHpTE5ENEhXUR6PKVPS';
       $generated = time();
