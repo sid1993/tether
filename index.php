@@ -233,6 +233,7 @@
                               }
  
                           });
+			$("myembed").load(location.href + "myembed");
 		  }
 
 </script>
