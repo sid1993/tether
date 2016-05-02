@@ -228,7 +228,7 @@
 		  $.ajax({
                               url:"queque.php",
           					success: function(data){
-
+								$("#gruveo").load("index.php #gruveo");
           						} 
  
                           });
