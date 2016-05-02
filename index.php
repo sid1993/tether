@@ -75,7 +75,7 @@
                 <nav class="collapse navbar-collapse navbar-right" role="navigation">
                     <ul id="nav" class="nav navbar-nav">
                         <li class="current"><a href="#body">Home</a></li>
-                        <li><a href="#gruveo">Connect</a></li>
+                        <li><a href="#gruveo" onclick="onEmbedReady();">Connect</a></li>
                         <li><a href="#features">Features</a></li>
                         <li><a href="#works">Works</a></li>
                         <li><a href="#team">Team</a></li>
@@ -176,10 +176,13 @@
       embedParams: {
         generated: <?php print $generated; ?>,
         signature: "<?php print $signature; ?>",
+		code:"<?php echo $_SESSION['uid']; ?>"
       }
     });
 	embed
-      .on("ready", onEmbedReady)
+	  .on("callInit", onCallInit)
+	  .on("busy", onBusy)
+	  .on("hangup", onHangUp)
       .on("stateChange", onEmbedStateChange);
   }
   
