@@ -193,7 +193,7 @@
 	var generated_code="<?php echo $selected_uid; ?>";
 	  if(!generated_code)
 	  {
-		  document.getElementById('myembed')="<h1>Please Wait...<h1>";
+		  document.getElementById("myembed").innerHTML="<h1>Please Wait...<h1>";
 	  }
 	  else
 	  {
