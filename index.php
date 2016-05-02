@@ -228,7 +228,7 @@
                               url:"queque.php",
                               cache: false,
           					success: function(data){
-             					$("#myembed").html(data);
+             					$("#gruveo").html(data);
           						} 
  
                           });
