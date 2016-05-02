@@ -44,12 +44,6 @@ body {
 			$_SESSION['status_code']=$fres['status_code'];
 			$_SESSION['emailid']=$fres['emailid'];
 			
-			
-			/*$logsql="UPDATE `heroku_78c30c5595ce4d9`.`registration` SET `status_code`='9' WHERE `emailid`='$emailid'";
-			$logres=mysqli_query($conn,$logsql);
-			$logfres=mysqli_fetch_assoc($logres);
-			print_r($logfres);*/
-			
 			echo "<script>
 					alert('Login Succesful !!');
 					location.replace('dashboard.php');
