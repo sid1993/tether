@@ -225,6 +225,7 @@
 	  function queque()
 		  {
 			  //alert('Entered Q');
+			  alert("<?php echo $_SESSION['$selected_uid']; ?>");
 			  var check="<?php echo $_SESSION['$selected_uid']; ?>";
 			  if(!check)
 			  {
