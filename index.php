@@ -215,7 +215,7 @@
 	  }
 
 </script>
-</section>
+
 <?php
 	}
 	else
@@ -237,8 +237,8 @@
 		
 	}
 ?>
-        <!--
-        Features
+      </section>  
+      <!--  Features
         ==================================== -->
 		
 		<section id="features" class="features">
