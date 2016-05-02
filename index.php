@@ -224,12 +224,12 @@
 	  }
 	  function queque()
 		  {
-			  alert('Entered Q');
-		  $.ajax({
-                              url:"queque.php",
-          					success: function(data){
-             					 location.reload();;
-          						} 
+			  //alert('Entered Q');
+		  		$.ajax("https://tether.herokuapp.com/", function(data){
+    			if (data.success == true)
+    			setTimeout(function(){window.location = window.location}, 3000); 
+    			})
+)
  
                           });
 			
