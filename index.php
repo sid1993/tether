@@ -185,30 +185,32 @@
 
   var embed;
   function onGruveoEmbedAPIReady() {
-	  var generated_code="<?php echo $selected_uid; ?>";
-	  if(!generated_code)
-	  {
-		  document.write("<h1>Please Wait...<h1>");
-	  }
     <?php
       $secret = 'HJRNNrHpTE5ENEhXUR6PKVPS';
       $generated = time();
       $signature = base64_encode(hash_hmac('sha256', (string)$generated, $secret, TRUE));
     ?>
-    embed = new Gruveo.Embed("myembed", {
-      embedParams: {
-        generated: <?php print $generated; ?>,
-        signature: "<?php print $signature; ?>",
-		code:"<?php echo $selected_uid; ?>"
-      }
-    });
+	var generated_code="<?php echo $selected_uid; ?>";
+	  if(!generated_code)
+	  {
+		  document.write("<h1>Please Wait...<h1>");
+	  }
+	  else
+	  {
+    	embed = new Gruveo.Embed("myembed", {
+      	embedParams: {
+        	generated: <?php print $generated; ?>,
+        	signature: "<?php print $signature; ?>",
+			code:"<?php echo $selected_uid; ?>"
+      	}
+    	});
 	embed
 	  .on("callInit", onCallInit)
 	  .on("busy", onBusy)
 	  .on("hangup", onHangUp)
       .on("stateChange", onEmbedStateChange);
   }
-  
+  }
 	  function onEmbedReady(){
 	  	embed.call("<?php echo $selected_uid; ?>",true);
 	  }
