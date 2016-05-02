@@ -10,8 +10,7 @@
 	//random uid selection
 	$length=sizeof($results_array);
 	$randomIndex=rand(0,$length-1);
-	$_SESSION['selected_uid']=$results_array[$randomIndex];
-	echo $_SESSION['selected_uid'];
+	print_r($results_array[$randomIndex]);
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
