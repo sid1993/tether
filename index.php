@@ -225,11 +225,9 @@
 	  function queque()
 		  {
 		  $.ajax({
-                              type:"post",
                               url:"queque.php",
-                              data:"",
                               success:function(data){
-                                 $("myembed").load("https://tether.herokuapp.com/#gruveo");
+                                 $("#gruveo").html(data);
                               }
  
                           });
