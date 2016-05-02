@@ -1,8 +1,9 @@
 <?php
 	include "connection/connection.php";
+	session_start();
 	$sql="SELECT uid FROM heroku_78c30c5595ce4d9.registration where status_code=1;";
 	$res=mysqli_query($conn,$sql);
-	$selected_uid="";
+	$_SESSION['$selected_uid']="";
 	$idle_user = array();
 	while ($row = $res->fetch_assoc()) {
     	$idle_user[] = $row;
@@ -12,7 +13,7 @@
 		//random uid selection
 		$length=sizeof($idle_user);
 		$randomIndex=rand(0,$length-1);
-		$selected_uid=$idle_user[$randomIndex]['uid'];
+		$_SESSION['$selected_uid']=$idle_user[$randomIndex]['uid'];
 	}
 ?>
 <!DOCTYPE html>
@@ -190,10 +191,11 @@
       $generated = time();
       $signature = base64_encode(hash_hmac('sha256', (string)$generated, $secret, TRUE));
     ?>
-	var generated_code="<?php echo $selected_uid; ?>";
+	var generated_code="<?php echo $_SESSION['$selected_uid']; ?>";
 	  if(!generated_code)
 	  {
-		  document.getElementById("myembed").innerHTML="<h1>Please Wait...<h1>";
+		  document.getElementById("myembed").innerHTML="<h1>Please Wait...All Our Doctors Are Busy...<h1>";
+		  setInterval( queque, 30000 );
 	  }
 	  else
 	  {
@@ -201,7 +203,7 @@
       	embedParams: {
         	generated: <?php print $generated; ?>,
         	signature: "<?php print $signature; ?>",
-			code:"<?php echo $selected_uid; ?>"
+			code:"<?php echo $_SESSION['$selected_uid']; ?>"
       	}
     	});
 	embed
@@ -212,7 +214,7 @@
   }
   }
 	  function onEmbedReady(){
-	  	embed.call("<?php echo $selected_uid; ?>",true);
+	  	embed.call("<?php echo $_SESSION['$selected_uid']; ?>",true);
 	  }
 	  function onEmbedStateChange(){
 	  	if (e.state == "call")
@@ -220,6 +222,18 @@
 			alert('Calling Dr.Sharma');
 		}
 	  }
+	  function queque()
+		  {
+		  $.ajax({
+                              type:"post",
+                              url:"queque.php",
+                              data:"",
+                              success:function(data){
+                                 
+                              }
+ 
+                          });
+		  }
 
 </script>
 </section>  
