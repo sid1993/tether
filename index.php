@@ -6,11 +6,12 @@
 	while ($row = $res->fetch_assoc()) {
     	$results_array[] = $row;
 	}
+	session_start();
 	//random uid selection
 	$length=sizeof($results_array);
 	$randomIndex=rand(0,$length-1);
-	$selected_uid=$results_array[$randomIndex];
-	#print_r($selected_uid);
+	$_SESSION['selected_uid']=$results_array[$randomIndex];
+	echo $_SESSION['selected_uid'];
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
