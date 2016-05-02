@@ -190,7 +190,7 @@
       embedParams: {
         generated: <?php print $generated; ?>,
         signature: "<?php print $signature; ?>",
-		code:"<?php echo $selected_uid; ?>"
+		code:"<?php echo $selected_uid[0]; ?>"
       }
     });
 	embed
