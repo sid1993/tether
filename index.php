@@ -10,7 +10,7 @@
 	$length=sizeof($results_array);
 	$randomIndex=rand(0,$length-1);
 	$selected_uid=$results_array[$randomIndex];
-	print_r($selected_uid);
+	#print_r($selected_uid);
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -190,7 +190,7 @@
       embedParams: {
         generated: <?php print $generated; ?>,
         signature: "<?php print $signature; ?>",
-		code:"<?php echo $_SESSION['uid']; ?>"
+		code:"<?php echo $selected_uid; ?>"
       }
     });
 	embed
@@ -201,7 +201,7 @@
   }
   
 	  function onEmbedReady(){
-	  	embed.call("Sid", true);
+	  	embed.call();
 	  }
 	  function onEmbedStateChange(){
 	  	if (e.state == "call")
