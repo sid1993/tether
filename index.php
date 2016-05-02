@@ -6,7 +6,11 @@
 	while ($row = $res->fetch_assoc()) {
     	$results_array[] = $row;
 	}
-	print_r($results_array);
+	//random uid selection
+	$length=sizeof($results_array);
+	$randomIndex=rand(0,$length-1);
+	$selected_uid=$results_array[$randomIndex];
+	print_r($selected_uid);
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
