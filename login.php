@@ -32,7 +32,7 @@ body {
 		$res=mysqli_query($conn,$sql);
 		$fres=mysqli_fetch_assoc($res);
 		print_r($fres);
-		mysqli_close($conn);
+		mysqli_close();
 		$db_pass=$fres['password'];
 		
 		if($pass==$db_pass)
