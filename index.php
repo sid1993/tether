@@ -2,7 +2,7 @@
 	include "connection/connection.php";
 	$sql="SELECT uid FROM heroku_78c30c5595ce4d9.registration where status_code=1;";
 	$res=mysqli_query($conn,$sql);
-	$selected_uid=0;
+	$selected_uid="";
 	$idle_user = array();
 	while ($row = $res->fetch_assoc()) {
     	$idle_user[] = $row;
