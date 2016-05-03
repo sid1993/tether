@@ -176,7 +176,7 @@
         ==================================== -->
        
 <section id="gruveo" class="gruveo">
-<div id="myembed"></div>
+<div id="myembed" ></div>
 
 <script>
   var tag = document.createElement("script");
@@ -232,6 +232,7 @@
 		  			$.ajax({
                               url:"queque.php",
           					success: function(data){
+								$("#myembed").html("<p> Be patient..</p>");
           						} 
  
                           });
