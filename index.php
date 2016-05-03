@@ -195,7 +195,7 @@
 	  if(!generated_code)
 	  {
 		  document.getElementById("myembed").innerHTML="<h1>Please Wait...All Our Doctors Are Busy...<h1>";
-		  setInterval( queque(), 3000 );
+		  setInterval( queque(), 30000 );
 	  }
 	  else
 	  {
@@ -225,10 +225,6 @@
 	  function queque()
 		  {
 			  //alert('Entered Q');
-			  alert("<?php echo $_SESSION['$selected_uid']; ?>");
-			  var check="<?php echo $_SESSION['$selected_uid']; ?>";
-			  if(!check)
-			  {
 		  			$.ajax({
                               url:"queque.php",
           					success: function(data){
@@ -236,22 +232,6 @@
           						} 
  
                           });
-			  }
-			  else
-			  {
-				  		embed = new Gruveo.Embed("myembed", {
-      					embedParams: {
-        						generated: <?php print $generated; ?>,
-        						signature: "<?php print $signature; ?>",
-								code:"<?php echo $_SESSION['$selected_uid']; ?>"
-      						}
-    					});
-						embed
-	  						.on("callInit", onCallInit)
-	  						.on("busy", onBusy)
-	  						.on("hangup", onHangUp)
-      						.on("stateChange", onEmbedStateChange);
-  			}
 		}
 			
 
