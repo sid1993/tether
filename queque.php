@@ -15,6 +15,6 @@ $qsql="SELECT uid FROM heroku_78c30c5595ce4d9.registration where status_code=1;"
 	}
 	else
 	{
-		header("Location: .php");
+		header('HTTP/1.1 500 Internal Server Error');
 	}
 ?>
