@@ -225,13 +225,7 @@
 	  function queque()
 		  {
 			  //alert('Entered Q');
-		  			$.ajax({
-                              url:"queque.php",
-          					success: function(data){
-								/*$("#myembed").html("<p> Be patient..</p>");*/
-          						} 
- 
-                          });
+		  			window.location.reload(1);
 		}
 			
 
