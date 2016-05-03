@@ -195,7 +195,7 @@
 	  if(!generated_code)
 	  {
 		  document.getElementById("myembed").innerHTML="<h1>Please Wait...All Our Doctors Are Busy...<h1>";
-		  setInterval( queque(), 3000 );
+		  setInterval( queque(), 30000 );
 	  }
 	  else
 	  {
