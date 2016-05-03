@@ -227,8 +227,12 @@
 		  $.ajax({
                               url:"queque.php",
                               success:function(data){
-                                 location.reload();
+                                 
                               }
+							  error: function()
+							  {
+								  location.reload();
+							  }
  
                           });
 	  }
