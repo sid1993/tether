@@ -11,6 +11,10 @@ $qsql="SELECT uid FROM heroku_78c30c5595ce4d9.registration where status_code=1;"
 	}
 	if($idle_user)
 	{
-		echo "<script>window.location.reload();</script>";
+		//do nothing
+	}
+	else
+	{
+		header("Location: .php");
 	}
 ?>
