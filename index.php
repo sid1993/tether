@@ -195,7 +195,7 @@
 	  if(!generated_code)
 	  {
 		  document.getElementById("myembed").innerHTML="<h1>Please Wait...All Our Doctors Are Busy...<h1>";
-		  setInterval( queque(), 30000 );
+		  setTimeout(location.reload, 60000);
 	  }
 	  else
 	  {
@@ -222,13 +222,6 @@
 			alert('Calling Dr.Sharma');
 		}
 	  }
-	  function queque()
-		  {
-			  //alert('Entered Q');
-		  			window.location.reload(1);
-		}
-			
-
 
 </script>
 </section>  
