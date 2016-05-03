@@ -228,7 +228,7 @@
 		  			$.ajax({
                               url:"queque.php",
           					success: function(data){
-								$("#myembed").html("<p> Be patient..</p>");
+								/*$("#myembed").html("<p> Be patient..</p>");*/
           						} 
  
                           });

@@ -14,6 +14,6 @@ $qsql="SELECT uid FROM heroku_78c30c5595ce4d9.registration where status_code=1;"
 		$length=sizeof($idle_user);
 		$randomIndex=rand(0,$length-1);
 		$_SESSION['$selected_uid']=$idle_user[$randomIndex]['uid'];
-		echo "<script>alert('Found one');</script>";
+		echo "<script>onGruveoEmbedAPIReady();</script>";
 	}
 ?>
