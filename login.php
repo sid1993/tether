@@ -69,12 +69,12 @@
     <tr>
       <td width="22%" height="37"  align="right"><span class="style2">Email ID </span></td>
       <td width="12%" align="center"></td>
-      <td width="66%" align="left"><input name="email" type="text" id="email" /></td>
+      <td width="66%" align="left">			<input name="email" type="text" id="email" /></td>
     </tr>
     <tr>
       <td height="39"  align="right"><span class="style2">Password</span></td>
       <td align="center"></td>
-      <td align="left"><input name="pass" type="password" id="pass" /></td>
+      <td align="left">			<input name="pass" type="password" id="pass" /></td>
     </tr>
     <tr>
       <td height="26" colspan="3"  align="center"><input name="login" type="submit" id="login" value="login" /></td>
