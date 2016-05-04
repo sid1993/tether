@@ -233,7 +233,7 @@
     						}
 							else
 							{
-        						alert("Error on query!");
+        						/*alert("Try again!");*/
 								setTimeout(queque, 3000);
     						}
 							 }
