@@ -195,7 +195,7 @@
 	  if(!generated_code)
 	  {
 		  document.getElementById("myembed").innerHTML="<h1>Please Wait...All Our Doctors Are Busy...<h1>";
-		  setTimeout(queque, 3000);
+		  queque();
 	  }
 	  else
 	  {
@@ -234,7 +234,7 @@
 							else
 							{
         						alert("Error on query!");
-								queque();
+								setTimeout(queque, 3000);
     						}
 							 }
                           });
