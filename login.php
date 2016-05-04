@@ -77,10 +77,10 @@ body {
       <td align="left"><input name="pass" type="password" id="pass" /></td>
     </tr>
     <tr>
-      <td height="26" colspan="3"  align="center"><input name="login" type="submit" id="login" value="login" /></td>
+      <td height="26" colspan="3"  align="center"><input name="login" type="submit" id="login" value="Log In" /></td>
     </tr>
   </table>
-  <p align="center" class="style3">New to Tether? Join Us! <a href="registration.php">Register</a></p>
+  <p align="center" class="style3">New to Tether? Join Us!  <a href="registration.php">Register</a></p>
 </form>
 </body>
 </html>
