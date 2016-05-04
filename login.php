@@ -61,7 +61,7 @@ body {
 <form id="form1" name="form1" method="post" action="">
   <h1 align="center" class="style1">	
   <div align="center">
-    <h1 class="style4">Login Portal    </h1>
+    <h1>Login Portal</h1>
   </div>
   <p align="center" class="style1">&nbsp;</p>
   <p align="center" class="style1"><img src="img/guest.png" width="128" height="128" /></p>
