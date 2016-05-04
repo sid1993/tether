@@ -3,22 +3,25 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Login Portal</title>
+<h2 align="right" class="style2">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+</h1>
 
-		<!-- CSS
-		================================================== -->
-		<!-- Fontawesome Icon font -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-		<!-- Twitter Bootstrap css -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-		<!-- jquery.fancybox  -->
-        <link rel="stylesheet" href="css/jquery.fancybox.css">
-		<!-- animate -->
-        <link rel="stylesheet" href="css/animate.css">
-		<!-- Main Stylesheet -->
-        <link rel="stylesheet" href="css/main.css">
-		<!-- media-queries -->
-        <link rel="stylesheet" href="css/media-queries.css">
+<style type="text/css">
+<!--
+.style1 {
+	font-size: x-large;
+	
+}
+.style2 {font-size: medium; }
+.style3 {font-size: small;
+		}
+body {
+	background-image: url(images/bg.jpg);
+}
+
+-->
+</style>
 </head>
 <?php
 	include "connection/connection.php";
@@ -64,23 +67,23 @@
     <h1 class="style4">Login Portal    </h1>
   </div>
   <p align="center" class="style1">&nbsp;</p>
-  <p align="center" class="style1"><img src="img/load.gif" width="128" height="128" /></p>
+  <p align="center" class="style1"><img src="images/guest.png" width="128" height="128" /></p>
   <table width="26%" height="110"  align="center" cellpadding="1" cellspacing="1">
     <tr>
       <td width="22%" height="37"  align="right"><span class="style2">Email ID </span></td>
       <td width="12%" align="center"></td>
-      <td width="66%" align="left">			<input name="email" type="text" id="email" /></td>
+      <td width="66%" align="left"><input name="email" type="text" id="email" /></td>
     </tr>
     <tr>
       <td height="39"  align="right"><span class="style2">Password</span></td>
       <td align="center"></td>
-      <td align="left">			<input name="pass" type="password" id="pass" /></td>
+      <td align="left"><input name="pass" type="password" id="pass" /></td>
     </tr>
     <tr>
       <td height="26" colspan="3"  align="center"><input name="login" type="submit" id="login" value="login" /></td>
     </tr>
   </table>
-  <p align="center" class="style3">New to Tether? Join Us! <a href="registration.php">Register</a></p>
+  <p align="center" class="style3"><a href="registration.php">Register</a> , if you have no account. </p>
 </form>
 </body>
 </html>
