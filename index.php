@@ -194,12 +194,7 @@
 	var generated_code="<?php echo $_SESSION['$selected_uid']; ?>";
 	  if(!generated_code)
 	  {
-		  	$("#myembed").Loadingdotdotdot({
-    			"speed": 400,
-    			"maxDots": 4,
-    			"word": "Please Wait...All Our Doctors Are Busy"
-				});
-		  /*document.getElementById("myembed").innerHTML="<h1 align='center'>Please Wait...All Our Doctors Are Busy...<h1>";*/
+		  document.getElementById("myembed").innerHTML="<h1 align='center'>Please Wait...All Our Doctors Are Busy...<h1>";
 		  queque();
 	  }
 	  else
@@ -238,7 +233,8 @@
     						}
 							else
 							{
-        						/*alert("Try again!");*/
+        						$("#myembed").fadeIn("slow");
+								/*alert("Try again!");*/
 								setTimeout(queque, 3000);
     						}
 							 }
