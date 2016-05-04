@@ -227,13 +227,14 @@
 		  $.ajax({
                               url:"queque.php",
 							  type: "POST",
-        					  data:{}
+        					  data:{"available":"no"}
+							  dataType: "json",
                              success: function(data) {
-    						if(data.status == 'success')
+    						if(data.available == 'yes')
 							{
         						alert("Thank you for subscribing!");
     						}
-							else if(data.status == 'error')
+							else if(data.available == 'no')
 							{
         						alert("Error on query!");
     						}
