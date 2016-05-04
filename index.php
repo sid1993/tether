@@ -56,6 +56,8 @@
 
 		<!-- Modernizer Script for old Browsers -->
         <script src="js/modernizr-2.6.2.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<script src="jquery.blink.js"></script>
 
     </head>
 	
@@ -233,7 +235,7 @@
     						}
 							else
 							{
-        						$("#gruveo").blink();
+        						$("#myembed").blink();
 								/*alert("Try again!");*/
 								setTimeout(queque, 3000);
     						}
