@@ -194,9 +194,12 @@
 	var generated_code="<?php echo $_SESSION['$selected_uid']; ?>";
 	  if(!generated_code)
 	  {
-		  document.getElementById("myembed").innerHTML="<h1 align='center'>Please Wait...All Our Doctors Are Busy...<h1><br><div id='preloader'>
-			<img src='img/preloader.gif' alt='Preloader'>
-		</div>";
+		  	$("#myembed").Loadingdotdotdot({
+    			"speed": 400,
+    			"maxDots": 4,
+    			"word": "Please Wait...All Our Doctors Are Busy"
+				});
+		  /*document.getElementById("myembed").innerHTML="<h1 align='center'>Please Wait...All Our Doctors Are Busy...<h1>";*/
 		  queque();
 	  }
 	  else
