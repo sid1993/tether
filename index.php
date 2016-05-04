@@ -234,6 +234,7 @@
 							else
 							{
         						alert("Error on query!");
+								queque();
     						}
 							 }
                           });
