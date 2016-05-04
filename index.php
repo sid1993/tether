@@ -177,10 +177,6 @@
        
 <section id="gruveo" class="gruveo">
 <div id="myembed" ></div>
-<div id='loader'>
-    <div id='box'></div>
-    <div id='hill'></div>
-</div>
 
 <script>
   var tag = document.createElement("script");
@@ -198,7 +194,7 @@
 	var generated_code="<?php echo $_SESSION['$selected_uid']; ?>";
 	  if(!generated_code)
 	  {
-		  document.getElementById("myembed").innerHTML="<div id='loader'>
+		  document.getElementById("myembed").innerHTML="<h1 align='center'>Please Wait...All Our Doctors Are Busy...<h1> <div id='loader'>
     <div id='box'></div>
     <div id='hill'></div>
 </div>";
