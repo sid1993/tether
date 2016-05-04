@@ -225,16 +225,15 @@
 	  function queque()
 	  {
 		  $.ajax({
+			  				  type: "POST",
                               url:"queque.php",
-							  type: "POST",
-        					  data:{"available":"no"},
-							  dataType: "json",
+        					  data:"available="+0,
                              success: function(data) {
-    						if(data.available == 'yes')
+    						if(data == 1)
 							{
         						alert("Thank you for subscribing!");
     						}
-							else if(data.available == 'no')
+							else
 							{
         						alert("Error on query!");
     						}

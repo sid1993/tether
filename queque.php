@@ -1,7 +1,7 @@
 <?php
 session_start();
 include "connection/connection.php";
-header('Content-type: application/json');
+
 
 $qsql="SELECT uid FROM heroku_78c30c5595ce4d9.registration where status_code=1;";
 	$qres=mysqli_query($conn,$qsql);
@@ -12,11 +12,11 @@ $qsql="SELECT uid FROM heroku_78c30c5595ce4d9.registration where status_code=1;"
 	$return=$_POST;
 	if($idle_user)
 	{
-		$return["available"] = "yes";
+		return 1;
 	}
 	else
 	{
-		$return["available"] = "no";
+		return 0;
 	}
-	echo json_encode($return);
+	
 ?>
