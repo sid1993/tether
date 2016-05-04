@@ -66,7 +66,7 @@ body {
     <h1 class="style4">Login Portal    </h1>
   </div>
   <p align="center" class="style1">&nbsp;</p>
-  <p align="center" class="style1"><img src="images/guest.png" width="128" height="128" /></p>
+  <p align="center" class="style1"><img src="img/lo.gif" width="128" height="128" /></p>
   <table width="26%" height="110"  align="center" cellpadding="1" cellspacing="1">
     <tr>
       <td width="22%" height="37"  align="right"><span class="style2">Email ID </span></td>
