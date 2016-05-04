@@ -225,11 +225,9 @@
 	  function queque()
 	  {
 		  $.ajax({
-			  				  type: "POST",
                               url:"queque.php",
-        					  data:"available="+0,
                              success: function(data) {
-    						if(data == 1)
+    						if(data == "1")
 							{
         						alert("Thank you for subscribing!");
     						}

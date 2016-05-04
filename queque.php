@@ -12,11 +12,11 @@ $qsql="SELECT uid FROM heroku_78c30c5595ce4d9.registration where status_code=1;"
 	$return=$_POST;
 	if($idle_user)
 	{
-		return 1;
+		echo "1";
 	}
 	else
 	{
-		return 0;
+		echo "0";
 	}
 	
 ?>
