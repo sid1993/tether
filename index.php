@@ -233,7 +233,7 @@
     						}
 							else
 							{
-        						$("#myembed").fadeIn("slow");
+        						$("#myembed").blink();;
 								/*alert("Try again!");*/
 								setTimeout(queque, 3000);
     						}
