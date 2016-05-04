@@ -226,14 +226,18 @@
 	  {
 		  $.ajax({
                               url:"queque.php",
-                              success:function(data){
-                                 
-                              }
-							  error: function()
-							  {
-								  location.reload();
-							  }
- 
+							  type: "POST",
+        					  data: {ready: ready},
+        					  dataType: "json",
+                             success: function(data) {
+    						if(data.status == 'success')
+							{
+        						alert("Thank you for subscribing!");
+    						}
+							else if(data.status == 'error')
+							{
+        						alert("Error on query!");
+    						}
                           });
 	  }
 
