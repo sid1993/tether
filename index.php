@@ -194,10 +194,9 @@
 	var generated_code="<?php echo $_SESSION['$selected_uid']; ?>";
 	  if(!generated_code)
 	  {
-		  document.getElementById("myembed").innerHTML="<h1 align='center'>Please Wait...All Our Doctors Are Busy...<h1> <div id='loader'>
-    <div id='box'></div>
-    <div id='hill'></div>
-</div>";
+		  document.getElementById("myembed").innerHTML="<h1 align='center'>Please Wait...All Our Doctors Are Busy...<h1><br><div id='preloader'>
+			<img src='img/preloader.gif' alt='Preloader'>
+		</div>";
 		  queque();
 	  }
 	  else
