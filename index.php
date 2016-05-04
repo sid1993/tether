@@ -229,7 +229,7 @@
                              success: function(data) {
     						if(data == "1")
 							{
-        						alert("Thank you for subscribing!");
+        						location.reload();
     						}
 							else
 							{
