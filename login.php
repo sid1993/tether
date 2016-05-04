@@ -66,7 +66,7 @@ body {
     <h1 class="style4">Login Portal    </h1>
   </div>
   <p align="center" class="style1">&nbsp;</p>
-  <p align="center" class="style1"><img src="img/lo.gif" width="128" height="128" /></p>
+  <p align="center" class="style1"><img src="img/load.gif" width="128" height="128" /></p>
   <table width="26%" height="110"  align="center" cellpadding="1" cellspacing="1">
     <tr>
       <td width="22%" height="37"  align="right"><span class="style2">Email ID </span></td>
@@ -82,7 +82,7 @@ body {
       <td height="26" colspan="3"  align="center"><input name="login" type="submit" id="login" value="login" /></td>
     </tr>
   </table>
-  <p align="center" class="style3"><a href="registration.php">Register</a> , if you have no account. </p>
+  <p align="center" class="style3">New to Tether?,<a href="registration.php">Register</a></p>
 </form>
 </body>
 </html>
