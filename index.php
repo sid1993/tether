@@ -177,6 +177,10 @@
        
 <section id="gruveo" class="gruveo">
 <div id="myembed" ></div>
+<div id='loader'>
+    <div id='box'></div>
+    <div id='hill'></div>
+</div>
 
 <script>
   var tag = document.createElement("script");
