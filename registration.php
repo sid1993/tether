@@ -45,7 +45,7 @@
 .style2 {color: #FF0000}
 body {
 	background-color: #CCCCCC;
-	background-image: url(images/bg.jpg);
+	background-image: url(img/doctor.jpg);
 }
 .style3 {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
