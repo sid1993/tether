@@ -9,7 +9,6 @@ $qsql="SELECT uid FROM heroku_78c30c5595ce4d9.registration where status_code=1;"
 	while ($row = $qres->fetch_assoc()) {
     	$idle_user[] = $row;
 	}
-	$return=$_POST;
 	if($idle_user)
 	{
 		echo "1";
