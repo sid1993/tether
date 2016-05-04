@@ -3,24 +3,22 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Login Portal</title>
-<h2 align="right" class="style2">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-</h1>
-
-<style type="text/css">
-<!--
-.style1 {
-	font-size: x-large;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-}
-.style2 {font-size: medium; }
-.style3 {font-size: small;
-		font-family: Verdana, Arial, Helvetica, sans-serif}
-body {
-	background-image: url(images/bg.jpg);
-}
--->
-</style>
+		<!-- CSS
+		================================================== -->
+		<!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- Twitter Bootstrap css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- jquery.fancybox  -->
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+		<!-- animate -->
+        <link rel="stylesheet" href="css/animate.css">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="css/main.css">
+		<!-- media-queries -->
+        <link rel="stylesheet" href="css/media-queries.css">
 </head>
 <?php
 	include "connection/connection.php";
@@ -82,7 +80,7 @@ body {
       <td height="26" colspan="3"  align="center"><input name="login" type="submit" id="login" value="login" /></td>
     </tr>
   </table>
-  <p align="center" class="style3">New to Tether?,<a href="registration.php">Register</a></p>
+  <p align="center" class="style3">New to Tether? Join Us! <a href="registration.php">Register</a></p>
 </form>
 </body>
 </html>
