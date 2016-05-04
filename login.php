@@ -3,10 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Login Portal</title>
-<h2 align="right" class="style2">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-</h1>
-
 <style type="text/css">
 <!--
 .style1 {
@@ -83,7 +80,7 @@ body {
       <td height="26" colspan="3"  align="center"><input name="login" type="submit" id="login" value="login" /></td>
     </tr>
   </table>
-  <p align="center" class="style3"><a href="registration.php">Register</a> , if you have no account. </p>
+  <p align="center" class="style3">New to Tether? Join Us! <a href="registration.php">Register</a></p>
 </form>
 </body>
 </html>
