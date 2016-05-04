@@ -224,7 +224,7 @@
 	  }
 	  function queque()
 	  {
-		  $.ajax({
+		/*  $.ajax({
                               url:"queque.php",
                              success: function(data) {
     						if(data == "1")
@@ -235,7 +235,7 @@
 							{
         						alert("Error on query!");
     						}
-                          });
+                          });*/
 	  }
 
 </script>
