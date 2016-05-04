@@ -48,6 +48,7 @@ if ($_SESSION['uid'])
        <script type="text/javascript" src="js/jquery-ui-1.8.17.custom.min.js"></script>
         <script src="js/modernizr-2.6.2.min.js"></script>
 		<script>
+				window.onbeforeunload = function() {alert('You will automatically be logged out if u close this tab.');logout();};
 				function logout(){
 					var r=confirm('Are you sure you ?');
 					if(r==true)
