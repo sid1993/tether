@@ -227,7 +227,7 @@
 		  $.ajax({
                               url:"queque.php",
 							  type: "POST",
-        					  data:{"available":"no"}
+        					  data:{"available":"no"},
 							  dataType: "json",
                              success: function(data) {
     						if(data.available == 'yes')
