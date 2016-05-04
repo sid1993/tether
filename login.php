@@ -14,7 +14,7 @@
 .style3 {font-size: small;
 		}
 body {
-	background-image: url(images/doctor.jpg);
+	background-image: url(img/doctor.jpg);
 }
 
 -->
