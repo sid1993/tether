@@ -233,7 +233,7 @@
     						}
 							else
 							{
-        						$("#gruveo").blink();;
+        						$("#gruveo").blink();
 								/*alert("Try again!");*/
 								setTimeout(queque, 3000);
     						}
