@@ -19,6 +19,7 @@ body {
 
 -->
 </style>
+<link rel="shortcut icon" href="/favicon.png" type="image/png">
 </head>
 <?php
 	include "connection/connection.php";

@@ -42,13 +42,13 @@ if ($_SESSION['uid'])
         <link rel="stylesheet" href="css/main.css">
 		<!-- media-queries -->
         <link rel="stylesheet" href="css/media-queries.css">
-
+		<link rel="shortcut icon" href="/favicon.png" type="image/png">
 		<!-- Modernizer Script for old Browsers -->
         <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
        <script type="text/javascript" src="js/jquery-ui-1.8.17.custom.min.js"></script>
         <script src="js/modernizr-2.6.2.min.js"></script>
 		<script>
-				window.onbeforeunload = function() {return 'You will automatically be logged out if u close this tab.';logout();};
+				/*window.onbeforeunload = function() {return 'You will automatically be logged out if u close this tab.';logout();};*/
 				function logout(){
 					var r=confirm('Are you sure you ?');
 					if(r==true)

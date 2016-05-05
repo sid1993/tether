@@ -71,6 +71,7 @@ body,td,th {
 }
 -->
 </style>
+<link rel="shortcut icon" href="/favicon.png" type="image/png">
 </head>
 
 <body>
