@@ -59,7 +59,13 @@ if ($_SESSION['uid'])
                               url:"update.php",
                               data:"status_code="+0+"&emailid="+"<?php echo $_SESSION['emailid'];?>",
                               success:function(data){
+                                 	$.ajax({
+                              			url:"session.php",
+                              			success:function(data){
                                  
+                              			}
+ 
+                          				});
                               }
  
                           });
