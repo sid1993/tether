@@ -181,6 +181,7 @@
 <div id="myembed" ></div>
 
 <script>
+//Creating the gruveo embed
   var tag = document.createElement("script");
   tag.src = "https://www.gruveo.com/embed-api/";
   var firstScriptTag = document.getElementsByTagName("script")[0];
@@ -208,6 +209,7 @@
 			code:"<?php echo $_SESSION['$selected_uid']; ?>"
       	}
     	});
+	//event listeners and handlers
 	embed
 	  .on("callInit", onCallInit)
 	  .on("busy", onBusy)
@@ -235,7 +237,7 @@
     						}
 							else
 							{
-        						$("#gruveo").blink();
+        						
 								/*alert("Try again!");*/
 								setTimeout(queque, 3000);
     						}
