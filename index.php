@@ -235,7 +235,7 @@
 								queque();
 							 }
                           });*/
-						  location.reload();
+						  alert('Busy');
 		  
 	  }
 	  function queque()
