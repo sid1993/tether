@@ -216,10 +216,10 @@ if ($_SESSION['uid'])
 	  function onEmbedReady(){
 	  	embed.call("<?php echo $_SESSION['uid']; ?>", true);
 	  }
-	  function onEmbedStateChange(){
+	  function onEmbedStateChange(e){
 	  	if (e.state == "call")
 		{
-			alert('Calling Dr.Sharma');
+			setTimeout(endCall, 10000);
 		}
 	  }
 	  function onCallInit(){
