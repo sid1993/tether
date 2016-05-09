@@ -228,13 +228,14 @@
 	  }
 	  function onBusy()
 	  {
-		  $.ajax({
+		  /*$.ajax({
                               url:"busy.php",
                              success: function(data) {
 								$("#myembed").html(data);
 								queque();
 							 }
-                          });
+                          });*/
+						  location.reload();
 		  
 	  }
 	  function queque()
