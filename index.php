@@ -220,10 +220,11 @@
 	  function onEmbedReady(){
 	  	embed.call("<?php echo $_SESSION['$selected_uid']; ?>",true);
 	  }
-	  function onEmbedStateChange(){
-	  	if (e.state == "call")
+	  function onEmbedStateChange(e){
+	  	if (e.state == "ready")
 		{
 			//nothing yet
+			setTimeout(queque, 30000);
 		}
 	  }
 	  function onBusy()
