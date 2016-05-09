@@ -219,7 +219,7 @@ if ($_SESSION['uid'])
 	  function onEmbedStateChange(e){
 	  	if (e.state == "call")
 		{
-			setTimeout(endCall, 10000);
+			
 		}
 	  }
 	  function onCallInit(){
