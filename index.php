@@ -223,8 +223,13 @@
 	  function onEmbedStateChange(){
 	  	if (e.state == "call")
 		{
-			alert('Calling Dr.Sharma');
+			//nothing yet
 		}
+	  }
+	  function onBusy()
+	  {
+		  document.getElementById("myembed").innerHTML="<h1 align='center'>Please Wait...While We Find Another Doctor For You...<img src='img/load.gif' width='300' height='300'/><h1>";
+		  queque();
 	  }
 	  function queque()
 	  {
