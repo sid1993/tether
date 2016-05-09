@@ -231,7 +231,7 @@
 		  $.ajax({
                               url:"busy.php",
                              success: function(data) {
-								$("#myembed").load(data);
+								$("#myembed").html(data);
 								queque();
 							 }
                           });
