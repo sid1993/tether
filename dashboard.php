@@ -219,7 +219,15 @@ if ($_SESSION['uid'])
 	  function onEmbedStateChange(e){
 	  	if (e.state == "call")
 		{
-			setTimeout(endCall, 10000);
+			$.ajax({
+                              type:"post",
+                              url:"update.php",
+                              data:"status_code="+2+"&emailid="+"<?php echo $_SESSION['emailid'];?>",
+                              success:function(data){
+                                 
+                              }
+ 
+                          });
 		}
 	  }
 	  function onCallInit(){
@@ -235,15 +243,7 @@ if ($_SESSION['uid'])
 		
 	  }
 	  function onBusy(){
-				$.ajax({
-                              type:"post",
-                              url:"update.php",
-                              data:"status_code="+2+"&emailid="+"<?php echo $_SESSION['emailid'];?>",
-                              success:function(data){
-                                 
-                              }
- 
-                          });
+				
 	  }
 	  function onHangUp(){
 				$.ajax({
