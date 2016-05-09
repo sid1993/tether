@@ -220,11 +220,10 @@
 	  function onEmbedReady(){
 	  	embed.call("<?php echo $_SESSION['$selected_uid']; ?>",true);
 	  }
-	  function onEmbedStateChange(e){
-	  	if (e.state == "ready")
+	  function onEmbedStateChange(){
+	  	if (e.state == "call")
 		{
 			//nothing yet
-			setTimeout(queque, 30000);
 		}
 	  }
 	  function onBusy()
@@ -236,8 +235,12 @@
 								queque();
 							 }
                           });*/
-						  alert('Busy');
+						  location.reload();
 		  
+	  }
+	  function onHangUp()
+	  {
+		   location.reload();
 	  }
 	  function queque()
 	  {
