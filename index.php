@@ -235,7 +235,8 @@
 								queque();
 							 }
                           });*/
-			document.getElementById("myembed").innerHTML="<h1 align='center'>Please Wait...All Our Doctors Are Busy...<img 	src='img/load.gif' width='300' height='300'/><h1>";
+			console.log("busy");
+			location.reload();
 		  
 	  }
 	  function queque()
