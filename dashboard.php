@@ -65,7 +65,7 @@ if ($_SESSION['uid'])
 						location.replace('login.php?');
 					}
 				}
-				window.onbeforeunload = function() {return 'Make sure that you Log Out before closing the tab !!';};
+				window.onbeforeunload = return logout();
 		</script>
     </head>
 	
