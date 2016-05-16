@@ -65,7 +65,7 @@ if ($_SESSION['uid'])
 						location.replace('login.php?');
 					}
 				}
-				window.onbeforeunload = return logout();
+				window.onbeforeunload =logout();
 		</script>
     </head>
 	
