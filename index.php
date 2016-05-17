@@ -811,7 +811,8 @@
 					},
 					submitHandler: function(form) {
 						$(form).ajaxSubmit({
-							type:"POST",
+							alert('Ask SID what just happened!! Too many connection');
+							/*type:"POST",
 							data: $(form).serialize(),
 							url:"process.php",
 							success: function() {
@@ -826,7 +827,7 @@
 								$('#contact-form').fadeTo( "slow", 0.15, function() {
 									$('#error').fadeIn();
 								});
-							}
+							}*/
 						});
 					}
 				});
