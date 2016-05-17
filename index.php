@@ -235,8 +235,8 @@
 								queque();
 							 }
                           });*/
-			console.log("busy");
-			location.reload();
+			
+			alert("Code currently busy.");
 		  
 	  }
 	  function queque()
