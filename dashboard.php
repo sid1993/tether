@@ -47,11 +47,16 @@ if ($_SESSION['uid'])
        <script type="text/javascript" src="js/jquery-ui-1.8.17.custom.min.js"></script>
         <script src="js/modernizr-2.6.2.min.js"></script>
 		<script>
-				$(window).on('unload', function(){
-
-         		logout();
-
-				});
+				window.onbeforeunload = function{ $.ajax({
+    						  type:"post",
+                              url:"update.php",
+							  async: false,
+                              data:"status_code="+0+"&emailid="+"<?php echo $_SESSION['emailid'];?>",
+                              success:function(data){
+                                 	
+                              }
+    							});
+								};
 				function logout(){
 					var r=confirm('Are you sure you ?');
 					if(r==true)
