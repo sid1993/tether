@@ -1,24 +1,11 @@
 <script>
 function chck_null_registration()
 {
-	if(document.getElementById('fname').value=="")
+	if(document.getElementById("fname").value=="")
 	{
 		alert("First name cannot be blank!!");
 		document.getElementById('fname').focus();
 		return false;
-	}
-	else if
-	{
-		var letters = /^[A-Za-z]+\s[A-Za-z]+$/;  
-	if(fname.value.match(letters))  
-	{  
-  	}  
-	else  
-	{  
-		alert('Username must have alphabet characters only and must contain only one space');  
-		fname.focus();
-		return false;  
-	}  
 	}
 	else if(document.getElementById('lname').value=="")
 	{
