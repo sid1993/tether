@@ -15,7 +15,7 @@
 		$prof=$_POST['prof'];
 		$uiid=$_POST['uiid'];
 		$uname=$_POST['uname'];
-		$pass=$_POST['pass'];
+		$pass=md5($_POST['pass']);
 		$doctor_reg_code=$_POST['doctor_reg_code'];
 		
 		$uif=$_FILES['uiphoto'];
