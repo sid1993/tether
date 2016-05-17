@@ -259,7 +259,8 @@ $(window).on('unload', function(e) {
                           });
 		
 	  }
-	  function onBusy(){
+	  function onBusy(e){
+		  alert("Code currently busy.");
 				
 	  }
 	  function onHangUp(){

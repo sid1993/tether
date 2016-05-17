@@ -220,7 +220,7 @@
 	  function onEmbedReady(){
 	  	embed.call("<?php echo $_SESSION['$selected_uid']; ?>",true);
 	  }
-	  function onEmbedStateChange(){
+	  function onEmbedStateChange(e){
 	  	if (e.state == "call")
 		{
 			//nothing yet
