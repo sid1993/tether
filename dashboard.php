@@ -47,7 +47,7 @@ if ($_SESSION['uid'])
        <script type="text/javascript" src="js/jquery-ui-1.8.17.custom.min.js"></script>
         <script src="js/modernizr-2.6.2.min.js"></script>
 		<script>
-				
+				window.onbeforeunload = function{ return "Make Sure You Log Out Before You Leave this page";};
 				function logout(){
 					var r=confirm('Are you sure you ?');
 					if(r==true)
@@ -65,7 +65,7 @@ if ($_SESSION['uid'])
 						location.replace('login.php?');
 					}
 				}
-				window.onbeforeunload =logout();
+				
 		</script>
     </head>
 	
