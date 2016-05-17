@@ -226,7 +226,7 @@
 			//nothing yet
 		}
 	  }
-	  function onBusy()
+	  function onBusy(e)
 	  {
 		  /*$.ajax({
                               url:"busy.php",
