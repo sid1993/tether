@@ -97,9 +97,7 @@
                         <li class="current"><a href="#body">Home</a></li>
                         <li><a href="#gruveo" onclick="onEmbedReady();">Connect</a></li>
                         <li><a href="#features">Features</a></li>
-                        <li><a href="#works">Works</a></li>
                         <li><a href="#team">Team</a></li>
-                        <li><a href="#facts">Facts</a></li>
                         <li><a href="#contact">Contact</a></li>
                         
                                                                     
@@ -326,122 +324,7 @@
         ==================================== -->
 		
 		
-        <!--
-        Our Works
-        ==================================== -->
-		
-		<section id="works" class="works clearfix">
-			<div class="container">
-				<div class="row">
-				
-					<div class="sec-title text-center">
-						<h2>Works</h2>
-						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
-					</div>
-					
-					<div class="sec-sub-title text-center">
-						<p>Though we are just a 2016 startup, we have touched many lives already and saved them.</p>
-					</div>
-					
-					<div class="work-filter wow fadeInRight animated" data-wow-duration="500ms">
-						<ul class="text-center">
-							<li><a href="javascript:;" data-filter="all" class="active filter">All</a></li>
-							<li><a href="javascript:;" data-filter=".branding" class="filter">Kolkata</a></li>
-							<li><a href="javascript:;" data-filter=".web" class="filter">Durgapur</a></li>
-							<li><a href="javascript:;" data-filter=".logo-design" class="filter">Siliguri</a></li>
-							<li><a href="javascript:;" data-filter=".photography" class="filter">Barasat</a></li>
-						</ul>
-					</div>
-					
-				</div>
-			</div>
-			
-			<div class="project-wrapper">
-			
-				<figure class="mix work-item branding">
-					<img src="img/works/item-1.jpg" alt="">
-					<figcaption class="overlay">
-						<a class="fancybox" rel="works" title="Powered by Tether" href="img/works/item-1.jpg"><i class="fa fa-eye fa-lg"></i></a>
-						<h4>Child Care</h4>
-						<p>Kolkata</p>
-					</figcaption>
-				</figure>
-				
-				<figure class="mix work-item web">
-					<img src="img/works/item-2.jpg" alt="">
-					<figcaption class="overlay">
-						<a class="fancybox" rel="works" title="Powered by Tether" href="img/works/item-2.jpg"><i class="fa fa-eye fa-lg"></i></a>
-						<h4>Medical Camp</h4>
-						<p>Durgapur</p>
-					</figcaption>
-				</figure>
-				
-				<figure class="mix work-item logo-design">
-					<img src="img/works/item-3.jpg" alt="">
-					<figcaption class="overlay">
-						<a class="fancybox" rel="works" title="Powered by Tether" href="img/works/item-3.jpg"><i class="fa fa-eye fa-lg"></i></a>
-						<h4>Doctor's Meet</h4>
-						<p>Siliguri</p>
-					</figcaption>
-				</figure>
-				
-				<figure class="mix work-item photography">
-					<img src="img/works/item-4.jpg" alt="">
-					<figcaption class="overlay">
-						<a class="fancybox" rel="works" title="Powered by Tether" href="img/works/item-4.jpg"><i class="fa fa-eye fa-lg"></i></a>
-						<h4>Health Camp</h4>
-						<p>Barasat</p>
-					</figcaption>
-				</figure>
-			
-				<figure class="mix work-item branding">
-					<img src="img/works/item-5.jpg" alt="">
-					<figcaption class="overlay">
-						<a class="fancybox" rel="works" title="Powered by Tether" href="img/works/item-5.jpg"><i class="fa fa-eye fa-lg"></i></a>
-						<h4>Health Camp</h4>
-						<p>Kolkata</p>
-					</figcaption>
-				</figure>
-				
-				<figure class="mix work-item web">
-					<img src="img/works/item-6.jpg" alt="">
-					<figcaption class="overlay">
-						<a class="fancybox" rel="works" title="Powered by Tether" href="img/works/item-6.jpg"><i class="fa fa-eye fa-lg"></i></a>
-						<h4>Doctors' Meet</h4>
-						<p>Durgapur</p>
-					</figcaption>
-				</figure>
-				
-				<figure class="mix work-item logo-design">
-					<img src="img/works/item-7.jpg" alt="">
-					<figcaption class="overlay">
-						<a class="fancybox" rel="works" title="Powered by Tether" href="img/works/item-7.jpg"><i class="fa fa-eye fa-lg"></i></a>
-						<h4>Health Camp</h4>
-						<p>Siliguri</p>
-					</figcaption>
-				</figure>
-				
-				<figure class="mix work-item photography">
-					<img src="img/works/item-8.jpg" alt="">
-					<figcaption class="overlay">
-						<a class="fancybox" rel="works" title="Powered by Tether" href="img/works/item-8.jpg"><i class="fa fa-eye fa-lg"></i></a>
-						<h4>Health Camp</h4>
-						<p>Barasat</p>
-					</figcaption>
-				</figure>
-				
-			</div>
-		
-
-		</section>
-		
-        <!--
-        End Our Works
-        ==================================== -->
-		
-        <!--
-        Meet Our Team
-        ==================================== -->		
+        		
 		
 		<section id="team" class="team">
 			<div class="container">
@@ -453,7 +336,7 @@
 					</div>
 					
 					<div class="sec-sub-title text-center wow fadeInRight animated" data-wow-duration="500ms">
-						<p>The S4</p>
+						<p>E.G.</p>
 					</div>
 
 					<!-- single member -->
@@ -471,7 +354,7 @@
 							</figcaption>
 						</div>
 						<h4>Siddhartha Chatterjee</h4>
-						<span>Managing Director</span>
+						<span>Developer</span>
 					</figure>
 					<!-- end single member -->
 					
@@ -480,7 +363,7 @@
 						<div class="member-thumb">
 							<img src="img/team/member-2.jpg" alt="Team Member" class="img-responsive">
 							<figcaption class="overlay">
-								<h5>Contact Sourav! </h5>
+								<h5>Contact Soura! </h5>
 								<p>Anytime,Anywhere</p>
 								<ul class="social-links text-center">
 									<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
@@ -489,48 +372,13 @@
 								</ul>
 							</figcaption>
 						</div>
-						<h4>Sourav Karmakar</h4>
-						<span>Lead Developer</span>
+						<h4>Souradyuti Bhattacharyya</h4>
+						<span>Marketive Executive</span>
 					</figure>
 					<!-- end single member -->
 					
-					<!-- single member -->
-					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
-						<div class="member-thumb">
-							<img src="img/team/member-3.jpg" alt="Team Member" class="img-responsive">
-							<figcaption class="overlay">
-								<h5>Contact Susho! </h5>
-								<p>Click down under.</p>
-								<ul class="social-links text-center">
-									<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-									<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-									<li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-								</ul>
-							</figcaption>
-						</div>
-						<h4>Sushobhit Biswas</h4>
-						<span>Sr. UI Designer</span>
-					</figure>
-					<!-- end single member -->
 					
-					<!-- single member -->
-					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
-						<div class="member-thumb">
-							<img src="img/team/member-4.jpg" alt="Team Member" class="img-responsive">
-							<figcaption class="overlay">
-								<h5>Contact Sachin! </h5>
-								<p>Feel free to contact me guys.</p>
-								<ul class="social-links text-center">
-									<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-									<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-									<li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-								</ul>
-							</figcaption>
-						</div>
-						<h4>Sachin Rakshit</h4>
-						<span>Managing Director</span>
-					</figure>
-					<!-- end single member -->
+					
 					
 				</div>
 			</div>
@@ -538,64 +386,6 @@
 		
         <!--
         End Meet Our Team
-        ==================================== -->
-		
-		<!--
-        Some fun facts
-        ==================================== -->		
-		
-		<section id="facts" class="facts">
-			<div class="parallax-overlay">
-				<div class="container">
-					<div class="row number-counters">
-						
-						<div class="sec-title text-center mb50 wow rubberBand animated" data-wow-duration="1000ms">
-							<h2>Some Fun Facts</h2>
-							<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
-						</div>
-						
-						<!-- first count item -->
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
-							<div class="counters-item">
-								<i class="fa fa-clock-o fa-3x"></i>
-								<strong data-to="3200">0</strong>
-								<!-- Set Your Number here. i,e. data-to="56" -->
-								<p>Hours of Work</p>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
-							<div class="counters-item">
-								<i class="fa fa-users fa-3x"></i>
-								<strong data-to="12">0</strong>
-								<!-- Set Your Number here. i,e. data-to="56" -->
-								<p>Satisfied Clients</p>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
-							<div class="counters-item">
-								<i class="fa fa-rocket fa-3x"></i>
-								<strong data-to="18">0</strong>
-								<!-- Set Your Number here. i,e. data-to="56" -->
-								<p> Projects Delivered </p>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
-							<div class="counters-item">
-								<i class="fa fa-trophy fa-3x"></i>
-								<strong data-to="2">0</strong>
-								<!-- Set Your Number here. i,e. data-to="56" -->
-								<p>Awards Won</p>
-							</div>
-						</div>
-						<!-- end first count item -->
-				
-					</div>
-				</div>
-			</div>
-		</section>
-		
-        <!--
-        End Some fun facts
         ==================================== -->
 		
 		
