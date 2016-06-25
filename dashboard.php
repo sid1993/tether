@@ -122,7 +122,6 @@ $(window).on('unload', function(e) {
                         <li><a href="#gruveo" onclick="onEmbedReady();">Connect</a></li>
                         <li><a href="#features">Features</a></li>
                         <li><a href="#team">Team</a></li>
-                        <li><a href="#facts">Facts</a></li>
                         <li><a href="#contact">Contact</a></li>
                         <li><a href="javascript:void(0);" onclick="logout();">Logout</a></li>
                         
@@ -379,7 +378,7 @@ $(window).on('unload', function(e) {
 							</figcaption>
 						</div>
 						<h4>Siddhartha Chatterjee</h4>
-						<span>Managing Director</span>
+						<span>Full Stack Developer</span>
 					</figure>
 					<!-- end single member -->
 					
@@ -388,7 +387,7 @@ $(window).on('unload', function(e) {
 						<div class="member-thumb">
 							<img src="img/team/member-2.jpg" alt="Team Member" class="img-responsive">
 							<figcaption class="overlay">
-								<h5>Contact Sourav! </h5>
+								<h5>Contact Soura! </h5>
 								<p>Anytime,Anywhere</p>
 								<ul class="social-links text-center">
 									<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
@@ -397,48 +396,12 @@ $(window).on('unload', function(e) {
 								</ul>
 							</figcaption>
 						</div>
-						<h4>Sourav Karmakar</h4>
-						<span>Lead Developer</span>
+						<h4>Souradyuti Bhattacharyya</h4>
+						<span>Marketing Executive</span>
 					</figure>
 					<!-- end single member -->
 					
-					<!-- single member -->
-					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
-						<div class="member-thumb">
-							<img src="img/team/member-3.jpg" alt="Team Member" class="img-responsive">
-							<figcaption class="overlay">
-								<h5>Contact Susho! </h5>
-								<p>Click down under.</p>
-								<ul class="social-links text-center">
-									<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-									<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-									<li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-								</ul>
-							</figcaption>
-						</div>
-						<h4>Sushobhit Biswas</h4>
-						<span>Sr. UI Designer</span>
-					</figure>
-					<!-- end single member -->
 					
-					<!-- single member -->
-					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
-						<div class="member-thumb">
-							<img src="img/team/member-4.jpg" alt="Team Member" class="img-responsive">
-							<figcaption class="overlay">
-								<h5>Contact Sachin! </h5>
-								<p>Feel free to contact me guys.</p>
-								<ul class="social-links text-center">
-									<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-									<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-									<li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-								</ul>
-							</figcaption>
-						</div>
-						<h4>Sachin Rakshit</h4>
-						<span>Managing Director</span>
-					</figure>
-					<!-- end single member -->
 					
 				</div>
 			</div>
@@ -452,59 +415,6 @@ $(window).on('unload', function(e) {
         Some fun facts
         ==================================== -->		
 		
-		<section id="facts" class="facts">
-			<div class="parallax-overlay">
-				<div class="container">
-					<div class="row number-counters">
-						
-						<div class="sec-title text-center mb50 wow rubberBand animated" data-wow-duration="1000ms">
-							<h2>Some Fun Facts</h2>
-							<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
-						</div>
-						
-						<!-- first count item -->
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
-							<div class="counters-item">
-								<i class="fa fa-clock-o fa-3x"></i>
-								<strong data-to="3200">0</strong>
-								<!-- Set Your Number here. i,e. data-to="56" -->
-								<p>Hours of Work</p>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
-							<div class="counters-item">
-								<i class="fa fa-users fa-3x"></i>
-								<strong data-to="12">0</strong>
-								<!-- Set Your Number here. i,e. data-to="56" -->
-								<p>Satisfied Clients</p>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
-							<div class="counters-item">
-								<i class="fa fa-rocket fa-3x"></i>
-								<strong data-to="18">0</strong>
-								<!-- Set Your Number here. i,e. data-to="56" -->
-								<p> Projects Delivered </p>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
-							<div class="counters-item">
-								<i class="fa fa-trophy fa-3x"></i>
-								<strong data-to="2">0</strong>
-								<!-- Set Your Number here. i,e. data-to="56" -->
-								<p>Awards Won</p>
-							</div>
-						</div>
-						<!-- end first count item -->
-				
-					</div>
-				</div>
-			</div>
-		</section>
-		
-        <!--
-        End Some fun facts
-        ==================================== -->
 		
 		
 		<!--
